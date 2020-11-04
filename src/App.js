@@ -1,5 +1,12 @@
+import { BrowserRouter as Router } from "react-router-dom";
+import Footer from "./components/common/footer";
+
 function App() {
-  return <div className='App'>Welcome to React Ecommerce</div>;
+  return (
+    <Router>
+      <Footer />
+    </Router>
+  );
 }
 
 export default App;
