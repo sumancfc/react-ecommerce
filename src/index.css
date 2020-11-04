@@ -21,6 +21,7 @@
 }
 
 body {
+  position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
@@ -28,21 +29,85 @@ body {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   color: var(--text-default);
+  overflow-x: hidden;
+  letter-spacing: 0.8px;
 }
 
-.btn-primary {
-  background: #0071df;
-  border-color: #0071df;
+h1 {
+  font-size: 60px;
+  color: var(--text-black);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.btn-secondary {
-  background: #f14705;
-  border-color: #f14705;
+h1 span {
+  font-size: 107px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+h2 {
+  font-size: 36px;
+  color: var(--text-black);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-default);
+  letter-spacing: 0.03em;
+}
+
+h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(var(--text-black));
+  line-height: 24px;
+  letter-spacing: 0.05em;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-default);
+  line-height: 24px;
+}
+
+p {
+  font-size: 14px;
+  color: var(--text-default);
+  line-height: 1;
 }
 
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   color: var(--text-primary);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+a:hover {
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+a:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
 }
 
 ul {
@@ -55,10 +120,139 @@ img {
   width: 100%;
 }
 
+.btn-primary {
+  background: #0071df;
+  border-color: #0071df;
+}
+
+.btn-secondary {
+  background: #f14705;
+  border-color: #f14705;
+}
+
 .img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+/* Button CSS  */
+button {
+  cursor: pointer;
+}
+
+.btn {
+  line-height: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-solid {
+  padding: 13px 29px;
+  color: #ffffff !important;
+  letter-spacing: 0.05em;
+  border: 2px solid var(--text-secondary);
+  background-image: linear-gradient(
+    30deg,
+    var(--text-secondary) 50%,
+    transparent 50%
+  );
+  background-size: 540px;
+  background-repeat: no-repeat;
+  background-position: 0;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.btn-solid:hover {
+  background-position: 100%;
+  color: #000000 !important;
+  background-color: #ffffff;
+}
+.btn-solid.black-btn {
+  background-image: linear-gradient(30deg, #222222 50%, transparent 50%);
+  border: 2px solid #222222;
+}
+.btn-solid:focus {
+  color: #ffffff;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 13px 29px;
+  letter-spacing: 0.05em;
+  border: 2px solid var(--text-secondary);
+  position: relative;
+  color: #000000;
+}
+.btn-outline:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: var(--text-secondary);
+  z-index: -2;
+}
+.btn-outline:hover {
+  color: #ffffff;
+}
+.btn-outline:hover:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.btn-outline:focus:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+button.btn.btn-solid:active,
+button.btn.btn-outline:active {
+  background-image: linear-gradient(
+    30deg,
+    var(--text-secondary) 50%,
+    transparent 50%
+  );
+  color: #ffffff;
+  background: var(--text-secondary);
+}
+
+.btn-classic:hover {
+  background-color: var(--text-secondary);
+}
+
+.btn-theme {
+  background-color: var(--text-secondary);
+  color: #ffffff;
 }
 
 /* Footer Css */
@@ -116,11 +310,16 @@ img {
 
 /* Media Query */
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 }
 
 @media (max-width: 768px) {
   .footer__payment {
     justify-content: flex-start;
   }
+}
+
+@media (max-width: 577px) {
+}
+@media (max-width: 480px) {
 }
