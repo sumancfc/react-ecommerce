@@ -1,0 +1,46 @@
+.section__title h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 21px;
+  line-height: 30px;
+}
+
+.section__title p {
+  width: 41%;
+  margin: 0 auto;
+  line-height: 26px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .section__title p {
+    width: 52%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section__title p {
+    width: 69%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section__title h2 {
+    margin-bottom: 14px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .section__title p {
+    width: 100%;
+  }
+
+  .section__title.mb-40 {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 766px) {
+  .section__title p {
+    width: 95%;
+  }
+}

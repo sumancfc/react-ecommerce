@@ -37,12 +37,12 @@ const HeroSlider = () => {
 
   return (
     <section className='p-0 slider'>
-      <Slider className='slide-1 home-slider' {...settings}>
+      <Slider className='slide-1 hero__slider' {...settings}>
         {data.map((value, i) => {
           return (
             <div key={i}>
               <div
-                className='home text-left p-left'
+                className='hero text-left slider__left'
                 style={{
                   backgroundImage: `url(assets/img/slider/${value.bgImg})`,
                 }}
@@ -50,7 +50,7 @@ const HeroSlider = () => {
                 <div className='container'>
                   <div className='row'>
                     <div className='col'>
-                      <div className='slider-contain'>
+                      <div className='slider__container'>
                         <div>
                           <h4>{value.sliderTitle}</h4>
                           <h1>{value.brand}</h1>
