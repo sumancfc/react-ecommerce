@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const MobileCategoryMenu = () => {
+  const [showCategory, setShowCategory] = useState(false);
+
+  const categoryClick = () => {
+    setShowCategory(!showCategory);
+  };
+
   return (
     <div className='background__red pt-20 pb-20 mobile__category-menu'>
       <div className='container'>
         <div className='header__menu-category'>
-          <h3 className='header__menu-category-show'>
+          <h3 className='header__menu-category-show' onClick={categoryClick}>
             <Link href='#'>
               <img
                 className='category__menu-non-stick'
@@ -21,14 +27,24 @@ const MobileCategoryMenu = () => {
               All Department <i className='la la-angle-down'></i>
             </Link>
           </h3>
-          <div className='nav__category-menu mobile-nav__category-menu nav__category-hide'>
+          <div
+            className={
+              showCategory
+                ? "nav__category-menu"
+                : "nav__category-menu nav__category-hide"
+            }
+          >
             <nav>
               <ul>
                 <li className='mobile__category-dd'>
-                  <Link href='#'>
+                  <Link href='#' onClick={categoryClick}>
                     Computer <span className='la la-angle-down'></span>
                   </Link>
-                  <ul className='category__hide-dsk'>
+                  <ul
+                    className={
+                      showCategory ? "category__hide-dsk" : "category__show-dsk"
+                    }
+                  >
                     <li className='category__sub-dd category__sub-style'>
                       <Link href='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>

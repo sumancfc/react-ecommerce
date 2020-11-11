@@ -1233,6 +1233,15 @@
   background-color: #fff;
   border-radius: 5px;
   padding: 23px 0 25px;
+  transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+}
+
+.nav__category-hide {
+  display: none;
 }
 
 .nav__category-menu nav > ul > li {
@@ -1446,6 +1455,10 @@
   visibility: visible;
 }
 
+.category__show-dsk {
+  display: block;
+}
+
 .mobile__category-menu {
   display: none;
 }
@@ -1457,10 +1470,6 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.mobile__category-menu .header__menu-category .nav__category-menu {
-  display: none;
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {

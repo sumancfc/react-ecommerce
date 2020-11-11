@@ -6,7 +6,7 @@ import MobileSearch from "./MobileSearch";
 const MobileAside = () => {
   useEffect(() => {
     const offCanvasNav = document.querySelector("#offcanvas__navigation");
-    const offCanvasNavSubMenu = offCanvasNav.querySelectorAll(".sub__menu");
+    const offCanvasNavSubMenu = offCanvasNav.querySelectorAll(".sub-menu");
     const anchorLinks = offCanvasNav.querySelectorAll("a");
 
     for (let i = 0; i < offCanvasNavSubMenu.length; i++) {

@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const CategoryMenu = () => {
+  const [showCategory, setShowCategory] = useState(true);
+
+  const categoryClick = () => {
+    setShowCategory(!showCategory);
+  };
+
   return (
     <div className='col-lg-4'>
       <div className='header__menu-category'>
-        <h3 className='header__menu-category-show'>
+        <h3 className='header__menu-category-show' onClick={categoryClick}>
           <Link to='#'>
             <img
               className='category__menu-non-stick'
@@ -20,7 +26,9 @@ const CategoryMenu = () => {
             All Department <i className='la la-angle-down'></i>
           </Link>
         </h3>
-        <div className='nav__category-menu nav__category-hide'>
+        <div
+          className={showCategory ? "nav__category-menu" : "nav__category-hide"}
+        >
           <nav>
             <ul>
               <li className='mobile__category-dd'>
