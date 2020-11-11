@@ -1,12 +1,12 @@
-import { BrowserRouter as Router } from "react-router-dom";
-import Footer from "./components/common/footer";
-import HeroSlider from "./components/common/Slider";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <Router>
-      <HeroSlider />
-      <Footer />
+      <Switch>
+        <Route path='/' exact component={Home} />
+      </Switch>
     </Router>
   );
 }
