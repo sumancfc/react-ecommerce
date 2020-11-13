@@ -4,8 +4,8 @@
     "name": "White Smart Watch",
     "price": 120,
     "salePrice": 200,
-    "discount": 50,
-    "pictures": [
+    "saleCount": 12,
+    "image": [
       "/assets/img/product/1.jpg",
       "/assets/img/product/2.jpg",
       "/assets/img/product/3.jpg",
@@ -16,10 +16,10 @@
     "stock": 16,
     "new": true,
     "sale": true,
-    "category": "male",
+    "category": ["watch", "accessories"],
     "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["rolex", "omega"],
+    "tags": ["watch", "accessories"],
     "rating": 4,
     "variants": [
       {
@@ -42,7 +42,8 @@
     "price": 120,
     "salePrice": 200,
     "discount": 50,
-    "pictures": [
+    "saleCount": 20,
+    "image": [
       "/assets/img/product/4.jpg",
       "/assets/img/product/5.jpg",
       "/assets/img/product/6.jpg",
@@ -53,10 +54,10 @@
     "stock": 16,
     "new": true,
     "sale": true,
-    "category": "male",
+    "category": ["watch", "accessories"],
     "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["rolex", "omega"],
+    "tags": ["watch", "accessories"],
     "rating": 4,
     "variants": [
       {
@@ -79,7 +80,8 @@
     "price": 120,
     "salePrice": 200,
     "discount": 50,
-    "pictures": [
+    "saleCount": 14,
+    "image": [
       "/assets/img/product/8.jpg",
       "/assets/img/product/1.jpg",
       "/assets/img/product/3.jpg",
@@ -90,10 +92,10 @@
     "stock": 16,
     "new": true,
     "sale": true,
-    "category": "male",
+    "category": ["watch", "accessories"],
     "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["rolex", "omega"],
+    "tags": ["watch", "accessories"],
     "rating": 4,
     "variants": [
       {
@@ -115,8 +117,9 @@
     "name": "Men Brown Watch",
     "price": 120,
     "salePrice": 200,
-    "discount": 50,
-    "pictures": [
+    "discount": 5,
+    "saleCount": 12,
+    "image": [
       "/assets/img/product/2.jpg",
       "/assets/img/product/4.jpg",
       "/assets/img/product/5.jpg",
@@ -127,10 +130,10 @@
     "stock": 16,
     "new": true,
     "sale": true,
-    "category": "male",
+    "category": ["watch", "accessories"],
     "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["rolex", "omega"],
+    "tags": ["watch", "accessories"],
     "rating": 4,
     "variants": [
       {
@@ -153,7 +156,8 @@
     "price": 120,
     "salePrice": 200,
     "discount": 50,
-    "pictures": [
+    "saleCount": 12,
+    "image": [
       "/assets/img/product/4.jpg",
       "/assets/img/product/5.jpg",
       "/assets/img/product/6.jpg",
@@ -164,10 +168,10 @@
     "stock": 16,
     "new": true,
     "sale": true,
-    "category": "male",
+    "category": ["watch", "accessories"],
     "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["rolex", "omega"],
+    "tags": ["watch", "accessories"],
     "rating": 4,
     "variants": [
       {
@@ -189,8 +193,8 @@
     "name": "Brown Strap Watch",
     "price": 120,
     "salePrice": 200,
-    "discount": 50,
-    "pictures": [
+    "saleCount": 100,
+    "image": [
       "/assets/img/product/6.jpg",
       "/assets/img/product/7.jpg",
       "/assets/img/product/8.jpg",
@@ -199,12 +203,12 @@
     "shortDetails": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem,",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     "stock": 16,
-    "new": true,
+    "new": false,
     "sale": true,
-    "category": "male",
+    "category": ["watch", "accessories"],
     "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["rolex", "omega"],
+    "tags": ["watch", "accessories"],
     "rating": 4,
     "variants": [
       {
@@ -227,7 +231,8 @@
     "price": 120,
     "salePrice": 200,
     "discount": 50,
-    "pictures": [
+    "saleCount": 80,
+    "image": [
       "/assets/img/product/4.jpg",
       "/assets/img/product/6.jpg",
       "/assets/img/product/7.jpg",
@@ -238,10 +243,10 @@
     "stock": 16,
     "new": true,
     "sale": true,
-    "category": "male",
+    "category": ["watch", "accessories"],
     "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["rolex", "omega"],
+    "tags": ["watch", "accessories"],
     "rating": 4,
     "variants": [
       {
@@ -264,7 +269,8 @@
     "price": 120,
     "salePrice": 200,
     "discount": 50,
-    "pictures": [
+    "saleCount": 3,
+    "image": [
       "/assets/img/product/5.jpg",
       "/assets/img/product/6.jpg",
       "/assets/img/product/7.jpg",
@@ -275,10 +281,10 @@
     "stock": 16,
     "new": true,
     "sale": true,
-    "category": "male",
+    "category": ["watch", "accessories"],
     "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["rolex", "omega"],
+    "tags": ["watch", "accessories"],
     "rating": 4,
     "variants": [
       {
