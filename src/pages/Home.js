@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "../components/common/products";
+import ProductGrid from "../components/common/products/ProductGrid";
 import Section from "../components/common/section";
 import HeroSlider from "../components/common/slider";
 import Title from "../components/common/title";
@@ -14,7 +14,7 @@ const Home = () => {
           title='Best Products'
           desc='lorem ipsum lorem ipsum lorem ipsumv lorem ipsum'
         />
-        <Products />
+        <ProductGrid />
       </Section>
     </Layout>
   );
