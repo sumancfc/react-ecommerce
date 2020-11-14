@@ -8,7 +8,7 @@ const Home = () => {
     <Layout>
       <HeroSlider />
 
-      <ProductGrid category='watch' limit={7} />
+      <ProductGrid category='watch' limit={8} />
     </Layout>
   );
 };

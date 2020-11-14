@@ -30,6 +30,7 @@ const MiddleHeader = () => {
                       value=''
                       placeholder='Search Hear'
                       type='search'
+                      onChange={(e) => e.target.value}
                     />
                     <button>
                       <i className='la la-search'></i>
@@ -86,7 +87,7 @@ const MiddleHeader = () => {
                     </h4>
                   </div>
                   <div className='shopping__cart-btn btn-hover default-btn text-center'>
-                    <Link className='black' to='checkout.html'>
+                    <Link className='black' to='#'>
                       Continue to Chackout
                     </Link>
                   </div>

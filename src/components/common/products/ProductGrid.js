@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../section-title";
-import ProductItem from "./sub/ProductItem";
+import ProductItems from "./sub/ProductItems";
 import "./Products.css";
 
 const ProductGrid = ({ category, limit }) => {
@@ -12,7 +12,7 @@ const ProductGrid = ({ category, limit }) => {
           desc='lorem ipsum lorem ipsum lorem ipsumv lorem ipsum'
         />
         <div className='row'>
-          <ProductItem category={category} limit={limit} type='bestSeller' />
+          <ProductItems category={category} limit={limit} type='bestSeller' />
         </div>
       </div>
     </div>
