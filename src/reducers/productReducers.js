@@ -1,4 +1,4 @@
-import { FETCH_PRODUCTS_SUCCESS } from "../constants/productConstants";
+import { FETCH_PRODUCTS_SUCCESS } from "../constants";
 
 const initialState = {
   products: [],

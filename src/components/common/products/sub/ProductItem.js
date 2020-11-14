@@ -1,9 +1,17 @@
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
+import { useToasts } from "react-toast-notifications";
 import ProductModal from "./ProductModal";
+import { getDiscount } from "../../../../helpers/products";
 
-const ProductItem = ({ product }) => {
+const ProductItem = ({ product, addToWishlist, wishlistItem }) => {
+  const { addToast } = useToasts();
   const [sModal, setSModal] = useState(false);
+
+  const discountedPrice = getDiscount(product.price, product.discount);
+  // const finalProductPrice = +product.price.toFixed(2);
+  // const finalDiscountedPrice = +discountedPrice.toFixed(2);
+
   return (
     <Fragment>
       <div className='col-xl-3 col-lg-4 col-md-6 col-sm-6'>
@@ -13,14 +21,7 @@ const ProductItem = ({ product }) => {
               <img src={product.image[0]} alt={product.name} />
             </Link>
             {product.discount ? (
-              <span className='price__dec'>{product.discount}</span>
-            ) : (
-              ""
-            )}
-            {product.outOfStock ? (
-              <span className='new__stock'>
-                <span>{product.outOfStock}</span>
-              </span>
+              <span className='price__dec'>-{product.discount}%</span>
             ) : (
               ""
             )}
@@ -33,7 +34,17 @@ const ProductItem = ({ product }) => {
               <Link onClick={() => setSModal(true)} title='Quick View'>
                 <i className='la la-plus'></i>
               </Link>
-              <Link title='Wishlist' to='#'>
+              <Link
+                className={wishlistItem !== undefined ? "active" : ""}
+                disabled={wishlistItem !== undefined}
+                title={
+                  wishlistItem !== undefined
+                    ? "Added to wishlist"
+                    : "Add to wishlist"
+                }
+                onClick={() => addToWishlist(product, addToast)}
+                to='#'
+              >
                 <i className='la la-heart-o'></i>
               </Link>
               <Link title='Compare' to='#'>

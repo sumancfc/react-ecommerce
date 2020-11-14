@@ -2,6 +2,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ToastProvider } from "react-toast-notifications";
 import { connect } from "react-redux";
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Wishlist from "./pages/Wishlist";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -9,6 +12,9 @@ function App() {
       <Router>
         <Switch>
           <Route path='/' exact component={Home} />
+          <Route path='/wishlist' exact component={Wishlist} />
+          <Route path='/cart' exact component={Cart} />
+          <Route path='/contact-us' exact component={Contact} />
         </Switch>
       </Router>
     </ToastProvider>

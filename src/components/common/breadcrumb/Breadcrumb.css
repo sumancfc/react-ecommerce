@@ -1,0 +1,78 @@
+.breadcrumb__area {
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.breadcrumb__content {
+  margin: 73px 0 0;
+}
+
+.breadcrumb__content h2 {
+  font-size: 34px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.breadcrumb__content ul li {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  margin-right: 18px;
+  text-transform: capitalize;
+  position: relative;
+  color: #ff5151;
+}
+
+.breadcrumb__content ul li::before {
+  position: absolute;
+  width: 18px;
+  height: 1px;
+  background-color: #1f2226;
+  content: "";
+  right: -21px;
+  top: 12px;
+  z-index: 9;
+  -webkit-transform: rotate(115deg);
+  transform: rotate(115deg);
+}
+
+.breadcrumb__content ul li:last-child::before {
+  display: none;
+}
+
+.breadcrumb__content ul li:last-child {
+  margin-right: 0px;
+}
+
+.breadcrumb__content ul li a {
+  font-weight: 500;
+  color: #373737;
+}
+
+.breadcrumb__content ul li a:hover {
+  color: #ff5151;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb__area {
+    height: 300px;
+    background-position: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .breadcrumb__area {
+    height: 280px;
+    background-position: 100%;
+  }
+
+  .breadcrumb__content h2 {
+    font-size: 28px;
+  }
+}

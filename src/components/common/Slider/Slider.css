@@ -12,7 +12,7 @@
 }
 .hero__slider .slick-prev:before,
 .hero__slider .slick-next:before {
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 16px/1 LineAwesome;
   opacity: 1;
   color: black;
   background-color: rgba(255, 255, 255, 0.5);
@@ -32,7 +32,7 @@
   right: 1px;
 }
 .hero__slider .slick-next:before {
-  content: "\f105";
+  content: "\f061";
 }
 
 .hero__slider .slick-prev {
