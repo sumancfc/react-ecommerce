@@ -1,0 +1,125 @@
+.about__content h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  padding-bottom: 28px;
+  position: relative;
+  text-transform: capitalize;
+  line-height: 1;
+}
+
+.about__content h2 span {
+  color: #ff5151;
+}
+
+.about__content h2::before {
+  background-color: #ff5151;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  width: 80px;
+}
+
+.about__content p {
+  margin: 0;
+  color: #333;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.about__content p.paragraph {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+
+.about__content .about__btn {
+  margin-top: 45px;
+}
+
+.about__content .about__btn a {
+  display: inline-block;
+  background-color: #ff5151;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1;
+  z-index: 1;
+  padding: 12px 22px;
+  border-radius: 5px;
+}
+
+.about__img {
+  margin-right: 30px;
+}
+
+.about__img img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about__content h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+    padding-bottom: 22px;
+  }
+
+  .about__content .about__btn {
+    margin-top: 30px;
+  }
+
+  .about__img {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about__content h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 19px;
+  }
+
+  .about__content p.paragraph {
+    margin-bottom: 12px;
+  }
+
+  .about__content .about__btn {
+    margin-top: 20px;
+  }
+
+  .about__img {
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about__content {
+    margin-top: 30px;
+  }
+
+  .about__content h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    padding-bottom: 19px;
+  }
+
+  .about__content p.paragraph {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .about__content .about__btn {
+    margin-top: 20px;
+  }
+
+  .about__img {
+    margin-right: 0px;
+  }
+}

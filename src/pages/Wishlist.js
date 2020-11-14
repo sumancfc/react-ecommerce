@@ -111,31 +111,6 @@ const Wishlist = ({
                                   </Link>
                                 ) : wishlistItem.stock &&
                                   wishlistItem.stock > 0 ? (
-                                  // <button
-                                  //   onClick={() =>
-                                  //     addToCart(wishlistItem, addToast)
-                                  //   }
-                                  //   className={
-                                  //     cartItem !== undefined &&
-                                  //     cartItem.quantity > 0
-                                  //       ? "active"
-                                  //       : ""
-                                  //   }
-                                  //   disabled={
-                                  //     cartItem !== undefined &&
-                                  //     cartItem.quantity > 0
-                                  //   }
-                                  //   title={
-                                  //     wishlistItem !== undefined
-                                  //       ? "Added to cart"
-                                  //       : "Add to cart"
-                                  //   }
-                                  // >
-                                  //   {cartItem !== undefined &&
-                                  //   cartItem.quantity > 0
-                                  //     ? "Added"
-                                  //     : "Add to cart"}
-                                  // </button>
                                   <Link>Add To Cart</Link>
                                 ) : (
                                   <button disabled className='active'>
@@ -206,17 +181,12 @@ const Wishlist = ({
 
 const mapStateToProps = (state) => {
   return {
-    // cartItems: state.cartData,
     wishlistItems: state.wishlistData,
-    // currency: state.currencyData
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    // addToCart: (item, addToast, quantityCount) => {
-    //   dispatch(addToCart(item, addToast, quantityCount));
-    // },
     addToWishlist: (item, addToast, quantityCount) => {
       dispatch(addToWishlist(item, addToast, quantityCount));
     },
