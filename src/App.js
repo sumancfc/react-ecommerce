@@ -6,17 +6,19 @@ import Contact from "./pages/Contact";
 import Wishlist from "./pages/Wishlist";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
+import Shop from "./pages/Shop";
 
 function App() {
   return (
     <ToastProvider placement='top-left'>
       <Router>
         <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/about-us' exact component={About} />
           <Route path='/wishlist' exact component={Wishlist} />
           <Route path='/cart' exact component={Cart} />
+          <Route path='/about-us' exact component={About} />
           <Route path='/contact-us' exact component={Contact} />
+          <Route path='/shop' exact component={Shop} />
+          <Route path='/' exact component={Home} />
         </Switch>
       </Router>
     </ToastProvider>
