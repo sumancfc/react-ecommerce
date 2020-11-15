@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { setActiveLayout } from "../../../helpers/products";
 
 const ShopTopbar = ({
-  layout,
+  getLayout,
   getFilterSort,
   productNum,
   productSortedNum,
@@ -11,17 +12,23 @@ const ShopTopbar = ({
     <div className='shop__topbar-wrapper'>
       <div className='shop__topbar-left'>
         <div className='view__mode nav'>
-          <a
+          <Link
             className='active'
-            href='#shop-1'
-            data-toggle='tab'
-            onCLick={(e) => layout("grid two-column")}
+            onClick={(e) => {
+              getLayout("grid");
+              setActiveLayout(e);
+            }}
           >
             <i className='la la-th'></i>
-          </a>
-          <a href='#shop-2' data-toggle='tab'>
+          </Link>
+          <Link
+            onClick={(e) => {
+              getLayout("list");
+              setActiveLayout(e);
+            }}
+          >
             <i className='la la-list-ul'></i>
-          </a>
+          </Link>
         </div>
         <p>
           Showing {productSortedNum} of {productNum} result

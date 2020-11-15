@@ -48,12 +48,8 @@ const Wishlist = ({
                             wishlistItem.price,
                             wishlistItem.discount
                           );
-                          const finalProductPrice = wishlistItem.price.toFixed(
-                            2
-                          );
-                          const finalDiscountedPrice = discountedPrice.toFixed(
-                            2
-                          );
+                          const finalProductPrice = wishlistItem.price;
+                          const finalDiscountedPrice = discountedPrice;
 
                           return (
                             <tr key={i}>

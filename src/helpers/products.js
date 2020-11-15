@@ -67,8 +67,8 @@ export const productSorted = (products, sortType, sortValue) => {
 
 //Layout change
 export const setActiveLayout = (e) => {
-  const gridBtn = document.querySelectorAll(".view__mode a");
-  gridBtn.forEach((item) => {
+  const gridSwitchBtn = document.querySelectorAll(".view__mode a");
+  gridSwitchBtn.forEach((item) => {
     item.classList.remove("active");
   });
   e.currentTarget.classList.add("active");

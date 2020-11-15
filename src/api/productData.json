@@ -199,7 +199,7 @@
   {
     "id": 5,
     "name": "Men Black Watch",
-    "price": 120,
+    "price": 150,
     "salePrice": 200,
     "discount": 50,
     "saleCount": 12,
@@ -274,7 +274,7 @@
   {
     "id": 7,
     "name": "Black Leather Watch",
-    "price": 120,
+    "price": 200,
     "salePrice": 200,
     "discount": 50,
     "saleCount": 80,
@@ -312,7 +312,7 @@
   {
     "id": 8,
     "name": "Order Made Watch",
-    "price": 120,
+    "price": 300,
     "salePrice": 200,
     "discount": 50,
     "saleCount": 3,
