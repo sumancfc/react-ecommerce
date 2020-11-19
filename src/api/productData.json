@@ -16,48 +16,12 @@
     "stock": 16,
     "new": true,
     "sale": true,
-    "category": ["watch", "accessories"],
-    "colors": ["yellow", "gray", "green"],
+    "category": ["watch", "fashions"],
+
     "size": ["M", "L", "XL"],
-    "tags": ["watch", "accessories"],
+    "tag": ["watch", "accessories", "fashions"],
     "rating": 4,
     "variation": [
-      {
-        "color": "yellow",
-        "images": "/assets/img/product/1.jpg",
-        "size": [
-          {
-            "name": "x",
-            "stock": 3
-          },
-          {
-            "name": "m",
-            "stock": 2
-          },
-          {
-            "name": "xl",
-            "stock": 5
-          }
-        ]
-      },
-      {
-        "color": "gray",
-        "images": "/assets/img/product/2.jpg",
-        "size": [
-          {
-            "name": "x",
-            "stock": 3
-          },
-          {
-            "name": "m",
-            "stock": 6
-          },
-          {
-            "name": "xl",
-            "stock": 7
-          }
-        ]
-      },
       {
         "color": "green",
         "images": "/assets/img/product/3.jpg",
@@ -101,22 +65,14 @@
     "new": true,
     "sale": true,
     "category": ["watch", "accessories"],
-    "colors": ["yellow", "gray", "green"],
+
     "size": ["M", "L", "XL"],
-    "tags": ["watch", "accessories"],
+    "tag": ["watch", "accessories"],
     "rating": 4,
     "variation": [
       {
-        "color": "yellow",
-        "images": "/assets/img/product/4.jpg"
-      },
-      {
         "color": "gray",
         "images": "/assets/img/product/5.jpg"
-      },
-      {
-        "color": "green",
-        "images": "/assets/img/product/6.jpg"
       }
     ]
   },
@@ -139,9 +95,8 @@
     "new": true,
     "sale": true,
     "category": ["watch", "accessories"],
-    "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["watch", "accessories"],
+    "tag": ["watch", "accessories"],
     "rating": 4,
     "variation": [
       {
@@ -177,9 +132,8 @@
     "new": true,
     "sale": true,
     "category": ["watch", "accessories"],
-    "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["watch", "accessories"],
+    "tag": ["watch", "accessories"],
     "rating": 4,
     "variation": [
       {
@@ -215,9 +169,8 @@
     "new": true,
     "sale": true,
     "category": ["watch", "accessories"],
-    "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["watch", "accessories"],
+    "tag": ["watch", "accessories"],
     "rating": 4,
     "variation": [
       {
@@ -252,9 +205,8 @@
     "new": false,
     "sale": true,
     "category": ["watch", "accessories"],
-    "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["watch", "accessories"],
+    "tag": ["watch", "accessories"],
     "rating": 4,
     "variation": [
       {
@@ -290,9 +242,8 @@
     "new": true,
     "sale": true,
     "category": ["watch", "accessories"],
-    "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["watch", "accessories"],
+    "tag": ["watch", "accessories"],
     "rating": 4,
     "variation": [
       {
@@ -328,9 +279,8 @@
     "new": true,
     "sale": true,
     "category": ["watch", "accessories"],
-    "colors": ["yellow", "gray", "green"],
     "size": ["M", "L", "XL"],
-    "tags": ["watch", "accessories"],
+    "tag": ["watch", "accessories"],
     "rating": 4,
     "variation": [
       {

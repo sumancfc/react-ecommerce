@@ -1013,7 +1013,6 @@
   left: 0;
   height: 15px;
   width: 15px;
-  background-color: #fff;
   border: 1px solid #888888;
 }
 
@@ -1048,12 +1047,19 @@
   transform: rotate(45deg);
 }
 
-.sidebar__widget .sidebar__widget-list ul li a {
-  margin-left: 30px;
+.sidebar__widget .sidebar__widget-list ul li button {
+  position: relative;
   display: block;
+  width: 100%;
+  padding: 0;
+  padding-left: 30px;
+  text-align: left;
+  text-transform: capitalize;
+  border: none;
+  background: none;
 }
 
-.sidebar__widget .sidebar__widget-list ul li a span {
+.sidebar__widget .sidebar__widget-list ul li button span {
   background-color: #eeeeee;
   width: 25px;
   height: 25px;
@@ -1065,11 +1071,20 @@
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   font-size: 13px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
 }
 
-.sidebar__widget .sidebar__widget-list ul li a:hover span {
+.sidebar__widget .sidebar__widget-list ul li button:hover span,
+.sidebar__widget .sidebar__widget-list ul li button.active span {
   color: #fff;
   background-color: #ff5151;
+  border: 1px solid #eee;
 }
 
 .sidebar__widget .sidebar__widget-tag ul li {
@@ -1077,14 +1092,15 @@
   margin: 0 10px 15px 0;
 }
 
-.sidebar__widget .sidebar__widget-tag ul li a {
+.sidebar__widget .sidebar__widget-tag ul li button {
   display: inline-block;
   padding: 10px 17px 10px;
   line-height: 1;
   border: 1px solid #ebebeb;
 }
 
-.sidebar__widget .sidebar__widget-tag ul li a:hover {
+.sidebar__widget .sidebar__widget-tag ul li button:hover,
+.sidebar__widget .sidebar__widget-tag ul li button.active {
   background-color: #ff5151;
   color: #fff;
 }
@@ -1210,7 +1226,7 @@
     margin: 0 3px 15px 0;
   }
 
-  .sidebar__widget .sidebar__widget-tag ul li a {
+  .sidebar__widget .sidebar__widget-tag ul li button {
     padding: 9px 7px 10px;
   }
 
