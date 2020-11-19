@@ -12,7 +12,6 @@ import Layout from "../components/Layouts";
 import { getDiscount } from "../helpers/products";
 
 const Wishlist = ({
-  location,
   wishlistItems,
   deleteAllFromWishlist,
   deleteFromWishlist,
@@ -47,8 +46,12 @@ const Wishlist = ({
                             wishlistItem.price,
                             wishlistItem.discount
                           );
-                          const finalProductPrice = wishlistItem.price;
-                          const finalDiscountedPrice = discountedPrice;
+                          const finalProductPrice = Number(
+                            wishlistItem.price
+                          ).toFixed(2);
+                          const finalDiscountedPrice = Number(
+                            discountedPrice
+                          ).toFixed(2);
 
                           return (
                             <tr key={i}>
@@ -89,23 +92,8 @@ const Wishlist = ({
                                 )}
                               </td>
                               <td className='product__wishlist-cart'>
-                                {wishlistItem.affiliateLink ? (
-                                  <a
-                                    href={wishlistItem.affiliateLink}
-                                    rel='noopener noreferrer'
-                                    target='_blank'
-                                  >
-                                    Buy now
-                                  </a>
-                                ) : wishlistItem.variation &&
-                                  wishlistItem.variation.length >= 1 ? (
-                                  <Link
-                                    to={`${process.env.PUBLIC_URL}/product/${wishlistItem.id}`}
-                                  >
-                                    Select option
-                                  </Link>
-                                ) : wishlistItem.stock &&
-                                  wishlistItem.stock > 0 ? (
+                                {wishlistItem.stock &&
+                                wishlistItem.stock > 0 ? (
                                   <Link>Add To Cart</Link>
                                 ) : (
                                   <button disabled className='active'>
@@ -114,13 +102,14 @@ const Wishlist = ({
                                 )}
                               </td>
                               <td className='product__remove'>
-                                <button
+                                <Link
+                                  tp='#'
                                   onClick={() =>
                                     deleteFromWishlist(wishlistItem, addToast)
                                   }
                                 >
-                                  <i className='la la-times'></i>
-                                </button>
+                                  <i className='la la-close'></i>
+                                </Link>
                               </td>
                             </tr>
                           );

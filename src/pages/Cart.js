@@ -56,7 +56,7 @@ const Cart = ({
                           const finalProductPrice = cartItem.price;
                           const finalDiscountedPrice = discountedPrice;
 
-                          discountedPrice != null
+                          discountedPrice !== null
                             ? (cartTotalPrice +=
                                 finalDiscountedPrice * cartItem.quantity)
                             : (cartTotalPrice +=

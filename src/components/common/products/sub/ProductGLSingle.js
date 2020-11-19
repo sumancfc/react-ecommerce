@@ -4,13 +4,21 @@ import { useToasts } from "react-toast-notifications";
 import { getDiscount } from "../../../../helpers/products";
 import ProductModal from "./ProductModal";
 
-const ProductGLSingle = ({ product, addToWishlist, wishlistItem }) => {
+const ProductGLSingle = ({
+  product,
+  addToCart,
+  addToWishlist,
+  addToCompare,
+  cartItem,
+  wishlistItem,
+  compareItem,
+}) => {
   const { addToast } = useToasts();
   const [sModal, setSModal] = useState(false);
 
   const discountedPrice = getDiscount(product.price, product.discount);
-  const finalProductPrice = product.price;
-  const finalDiscountedPrice = discountedPrice;
+  const finalProductPrice = Number(product.price).toFixed(2);
+  const finalDiscountedPrice = Number(discountedPrice).toFixed(2);
 
   return (
     <>
@@ -24,7 +32,7 @@ const ProductGLSingle = ({ product, addToWishlist, wishlistItem }) => {
               />
             </Link>
             {product.discount ? (
-              <span className='price__dec'>-{product.price}%</span>
+              <span className='price__dec'>-{product.discount}%</span>
             ) : (
               ""
             )}
@@ -36,10 +44,10 @@ const ProductGLSingle = ({ product, addToWishlist, wishlistItem }) => {
             )}
 
             <div className='product__action'>
-              <Link onClick={() => setSModal(true)} title='Quick View'>
+              <button onClick={() => setSModal(true)} title='Quick View'>
                 <i className='la la-plus'></i>
-              </Link>
-              <Link
+              </button>
+              <button
                 className={wishlistItem !== undefined ? "active" : ""}
                 disabled={wishlistItem !== undefined}
                 title={
@@ -48,13 +56,21 @@ const ProductGLSingle = ({ product, addToWishlist, wishlistItem }) => {
                     : "Add to wishlist"
                 }
                 onClick={() => addToWishlist(product, addToast)}
-                to='#'
               >
                 <i className='la la-heart-o'></i>
-              </Link>
-              <Link title='Compare' to='#'>
+              </button>
+              <button
+                className={compareItem !== undefined ? "active" : ""}
+                disabled={compareItem !== undefined}
+                title={
+                  compareItem !== undefined
+                    ? "Added To Compare"
+                    : "Add To Compare"
+                }
+                onClick={() => addToCompare(product, addToast)}
+              >
                 <i className='la la-retweet'></i>
-              </Link>
+              </button>
             </div>
           </div>
           <div className='product__content'>
@@ -67,16 +83,33 @@ const ProductGLSingle = ({ product, addToWishlist, wishlistItem }) => {
                 {discountedPrice !== null ? (
                   <>
                     <span>${finalDiscountedPrice}</span>
-                    <span className='old-price'>${finalProductPrice}</span>
+                    <span className='old'>${finalProductPrice}</span>
                   </>
                 ) : (
                   <span>${finalProductPrice} </span>
                 )}
               </div>
               <div className='product-add-to-cart'>
-                <Link title='Add To Cart' to='#'>
-                  + Add To Cart
-                </Link>
+                {product.stock && product.stock > 0 ? (
+                  <button
+                    onClick={() => addToCart(product, addToast)}
+                    className={
+                      cartItem !== undefined && cartItem.quantity > 0
+                        ? "active"
+                        : ""
+                    }
+                    disabled={cartItem !== undefined && cartItem.quantity > 0}
+                    title={
+                      cartItem !== undefined ? "Added to cart" : "Add to cart"
+                    }
+                  >
+                    <i className='la la-shopping-cart'></i>
+                  </button>
+                ) : (
+                  <button disabled className='active' title='Out of stock'>
+                    <i className='la la-shopping-cart'></i>
+                  </button>
+                )}
               </div>
             </div>
           </div>
@@ -110,8 +143,8 @@ const ProductGLSingle = ({ product, addToWishlist, wishlistItem }) => {
                 <div className='pro__list-price'>
                   {discountedPrice !== null ? (
                     <>
-                      <span>${finalDiscountedPrice}</span>{" "}
-                      <span className='old-price'>${finalProductPrice}</span>
+                      <span>${finalDiscountedPrice}</span>
+                      <span className='old'>${finalProductPrice}</span>
                     </>
                   ) : (
                     <span>${finalProductPrice} </span>
@@ -119,7 +152,7 @@ const ProductGLSingle = ({ product, addToWishlist, wishlistItem }) => {
                 </div>
                 <p>{product.shortDetails}</p>
                 <div className='product__list-action'>
-                  <Link
+                  <button
                     className={wishlistItem !== undefined ? "active" : ""}
                     disabled={wishlistItem !== undefined}
                     title={
@@ -128,16 +161,41 @@ const ProductGLSingle = ({ product, addToWishlist, wishlistItem }) => {
                         : "Add to wishlist"
                     }
                     onClick={() => addToWishlist(product, addToast)}
-                    to='#'
                   >
                     <i className='la la-heart-o'></i>
-                  </Link>
-                  <Link title='Compare' to='#'>
+                  </button>
+                  <button
+                    className={compareItem !== undefined ? "active" : ""}
+                    disabled={compareItem !== undefined}
+                    title={
+                      compareItem !== undefined
+                        ? "Added To Compare"
+                        : "Add To Compare"
+                    }
+                    onClick={() => addToCompare(product, addToast)}
+                  >
                     <i className='la la-retweet'></i>
-                  </Link>
-                  <Link title='Add To Cart' to='#'>
-                    <i className='la la-shopping-cart'></i>
-                  </Link>
+                  </button>
+                  {product.stock && product.stock > 0 ? (
+                    <button
+                      onClick={() => addToCart(product, addToast)}
+                      className={
+                        cartItem !== undefined && cartItem.quantity > 0
+                          ? "active"
+                          : ""
+                      }
+                      disabled={cartItem !== undefined && cartItem.quantity > 0}
+                      title={
+                        cartItem !== undefined ? "Added to cart" : "Add to cart"
+                      }
+                    >
+                      <i className='la la-shopping-cart'></i>
+                    </button>
+                  ) : (
+                    <button disabled className='active' title='Out of stock'>
+                      <i className='la la-shopping-cart'></i>
+                    </button>
+                  )}
                 </div>
               </div>
             </div>

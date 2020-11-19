@@ -836,6 +836,16 @@ textarea {
   background-color: #333;
 }
 
+.cart__table-content
+  table
+  tbody
+  > tr
+  td.product__wishlist-cart
+  > button.active {
+  background-color: #333;
+  color: #fff;
+}
+
 .cart__table-content table tbody > tr td {
   font-size: 15px;
   padding: 30px 0;

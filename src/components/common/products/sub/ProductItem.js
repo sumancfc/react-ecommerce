@@ -17,8 +17,8 @@ const ProductItem = ({
   const [sModal, setSModal] = useState(false);
 
   const discountedPrice = getDiscount(product.price, product.discount);
-  // const finalProductPrice = +product.price.toFixed(2);
-  // const finalDiscountedPrice = +discountedPrice.toFixed(2);
+  const finalProductPrice = Number(product.price).toFixed(2);
+  const finalDiscountedPrice = Number(discountedPrice).toFixed(2);
 
   return (
     <Fragment>
@@ -75,8 +75,14 @@ const ProductItem = ({
             </h4>
             <div className='price__add-to-cart'>
               <div className='product__price'>
-                <span>${product.price}</span>
-                {product.old && <span className='old'>${product.old}</span>}
+                {discountedPrice !== null ? (
+                  <>
+                    <span>${finalDiscountedPrice}</span>
+                    <span className='old'>${finalProductPrice}</span>
+                  </>
+                ) : (
+                  <span>${finalProductPrice} </span>
+                )}
               </div>
               <div className='product-add-to-cart'>
                 {product.stock && product.stock > 0 ? (
@@ -96,7 +102,7 @@ const ProductItem = ({
                   </button>
                 ) : (
                   <button disabled className='active' title='Out of stock'>
-                    <i className='fa fa-shopping-cart'></i>
+                    <i className='la la-shopping-cart'></i>
                   </button>
                 )}
               </div>

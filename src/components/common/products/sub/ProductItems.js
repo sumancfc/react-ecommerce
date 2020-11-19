@@ -1,18 +1,18 @@
 import React from "react";
 import { connect } from "react-redux";
 import { getProducts } from "../../../../helpers/products";
-import { addToWishlist } from "../../../../actions/wishlistActions";
 import { addToCart } from "../../../../actions/cartActions";
+import { addToWishlist } from "../../../../actions/wishlistActions";
 import { addToCompare } from "../../../../actions/compareActions";
 import ProductItem from "./ProductItem";
 
 const ProductItems = ({
   products,
   addToCart,
-  cartItems,
   addToWishlist,
-  wishlistItems,
   addToCompare,
+  cartItems,
+  wishlistItems,
   compareItems,
 }) => {
   return (
@@ -23,16 +23,16 @@ const ProductItems = ({
             key={product.id}
             product={product}
             addToCart={addToCart}
+            addToWishlist={addToWishlist}
+            addToCompare={addToCompare}
             cartItem={
               cartItems.filter((cartItem) => cartItem.id === product.id)[0]
             }
-            addToWishlist={addToWishlist}
             wishlistItem={
               wishlistItems.filter(
                 (wishlistItem) => wishlistItem.id === product.id
               )[0]
             }
-            addToCompare={addToCompare}
             compareItem={
               compareItems.filter(
                 (compareItem) => compareItem.id === product.id

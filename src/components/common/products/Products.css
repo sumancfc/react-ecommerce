@@ -777,7 +777,7 @@
   margin: 10px 0 20px;
 }
 
-.shop__list-wrap .shop__list-content .product__list-action a {
+.shop__list-wrap .shop__list-content .product__list-action button {
   font-size: 22px;
   color: #222;
   border: 1px solid #e6e6e6;
@@ -791,11 +791,12 @@
   margin-right: 10px;
 }
 
-.shop__list-wrap .shop__list-content .product__list-action a:last-child {
+.shop__list-wrap .shop__list-content .product__list-action button:last-child {
   margin-right: 0;
 }
 
-.shop__list-wrap .shop__list-content .product__list-action a:hover {
+.shop__list-wrap .shop__list-content .product__list-action button:hover,
+.shop__list-wrap .shop__list-content .product__list-action button.active {
   color: #fff;
   border: 1px solid #ff5151;
   background-color: #ff5151;
