@@ -4,7 +4,15 @@ import { useToasts } from "react-toast-notifications";
 import ProductModal from "./ProductModal";
 import { getDiscount } from "../../../../helpers/products";
 
-const ProductItem = ({ product, addToWishlist, wishlistItem }) => {
+const ProductItem = ({
+  product,
+  addToCart,
+  addToWishlist,
+  addToCompare,
+  cartItem,
+  wishlistItem,
+  compareItem,
+}) => {
   const { addToast } = useToasts();
   const [sModal, setSModal] = useState(false);
 
@@ -31,10 +39,10 @@ const ProductItem = ({ product, addToWishlist, wishlistItem }) => {
               ""
             )}
             <div className='product__action'>
-              <Link onClick={() => setSModal(true)} title='Quick View'>
+              <button onClick={() => setSModal(true)} title='Quick View'>
                 <i className='la la-plus'></i>
-              </Link>
-              <Link
+              </button>
+              <button
                 className={wishlistItem !== undefined ? "active" : ""}
                 disabled={wishlistItem !== undefined}
                 title={
@@ -43,13 +51,21 @@ const ProductItem = ({ product, addToWishlist, wishlistItem }) => {
                     : "Add to wishlist"
                 }
                 onClick={() => addToWishlist(product, addToast)}
-                to='#'
               >
                 <i className='la la-heart-o'></i>
-              </Link>
-              <Link title='Compare' to='#'>
+              </button>
+              <button
+                className={compareItem !== undefined ? "active" : ""}
+                disabled={compareItem !== undefined}
+                title={
+                  compareItem !== undefined
+                    ? "Added To Compare"
+                    : "Add To Compare"
+                }
+                onClick={() => addToCompare(product, addToast)}
+              >
                 <i className='la la-retweet'></i>
-              </Link>
+              </button>
             </div>
           </div>
           <div className='product__content'>
@@ -63,9 +79,26 @@ const ProductItem = ({ product, addToWishlist, wishlistItem }) => {
                 {product.old && <span className='old'>${product.old}</span>}
               </div>
               <div className='product-add-to-cart'>
-                <Link title='Add To Cart' to='/'>
-                  + Add To Cart
-                </Link>
+                {product.stock && product.stock > 0 ? (
+                  <button
+                    onClick={() => addToCart(product, addToast)}
+                    className={
+                      cartItem !== undefined && cartItem.quantity > 0
+                        ? "active"
+                        : ""
+                    }
+                    disabled={cartItem !== undefined && cartItem.quantity > 0}
+                    title={
+                      cartItem !== undefined ? "Added to cart" : "Add to cart"
+                    }
+                  >
+                    <i className='la la-shopping-cart'></i>
+                  </button>
+                ) : (
+                  <button disabled className='active' title='Out of stock'>
+                    <i className='fa fa-shopping-cart'></i>
+                  </button>
+                )}
               </div>
             </div>
           </div>

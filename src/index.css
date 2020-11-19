@@ -720,9 +720,15 @@ textarea {
   width: 435px;
 }
 
-.cart__table-content table tbody > tr td.product__price-cart span {
+.cart__table-content table tbody > tr td.product__price-cart span.amount {
   color: #333;
   font-weight: 500;
+}
+
+.cart__table-content table tbody > tr td.product__price-cart span.old {
+  margin-right: 10px;
+  text-decoration: line-through;
+  color: #8e8e8e;
 }
 
 .cart__table-content table tbody > tr td.product__quantity {
@@ -869,7 +875,6 @@ textarea {
 .cart__shiping-update-wrapper .cart__clear > button {
   border: medium none;
   cursor: pointer;
-  margin-right: 27px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -1153,6 +1158,14 @@ textarea {
 
 .empty__area-icon i {
   font-size: 45px;
+}
+
+.cart__item-variation {
+  margin-top: 10px;
+}
+
+.cart__item-variation span {
+  display: block;
 }
 
 /* Media Query */
