@@ -7,6 +7,10 @@ import Wishlist from "./pages/Wishlist";
 import Cart from "./pages/Cart";
 import About from "./pages/About";
 import Shop from "./pages/Shop";
+import Compare from "./pages/Compare";
+import Profile from "./pages/Profile";
+import LoginRegister from "./pages/Login-Register";
+import Checkout from "./pages/Checkout";
 
 function App() {
   return (
@@ -15,8 +19,12 @@ function App() {
         <Switch>
           <Route path='/wishlist' exact component={Wishlist} />
           <Route path='/cart' exact component={Cart} />
+          <Route path='/checkout' exact component={Checkout} />
           <Route path='/about-us' exact component={About} />
           <Route path='/contact-us' exact component={Contact} />
+          <Route path='/compare' exact component={Compare} />
+          <Route path='/login-register' exact component={LoginRegister} />
+          <Route path='/profile' exact component={Profile} />
           <Route path='/shop' exact component={Shop} />
           <Route path='/' exact component={Home} />
         </Switch>

@@ -18,7 +18,6 @@ const Wishlist = ({
   deleteFromWishlist,
 }) => {
   const { addToast } = useToasts();
-  const { pathname } = location;
 
   return (
     <Layout>
