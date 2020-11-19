@@ -14,9 +14,9 @@ import {
 } from "../actions/cartActions";
 
 const Cart = ({
+  addToCart,
   cartItems,
   decreaseQuantity,
-  addToCart,
   deleteFromCart,
   deleteAllFromCart,
 }) => {
@@ -53,8 +53,12 @@ const Cart = ({
                             cartItem.price,
                             cartItem.discount
                           );
-                          const finalProductPrice = cartItem.price;
-                          const finalDiscountedPrice = discountedPrice;
+                          const finalProductPrice = Number(
+                            cartItem.price
+                          ).toFixed(2);
+                          const finalDiscountedPrice = Number(
+                            discountedPrice
+                          ).toFixed(2);
 
                           discountedPrice !== null
                             ? (cartTotalPrice +=
@@ -150,8 +154,12 @@ const Cart = ({
                               <td className='product__subtotal'>
                                 $
                                 {discountedPrice !== null
-                                  ? finalDiscountedPrice * cartItem.quantity
-                                  : finalProductPrice * cartItem.quantity}
+                                  ? Number(
+                                      finalDiscountedPrice * cartItem.quantity
+                                    ).toFixed(2)
+                                  : Number(
+                                      finalProductPrice * cartItem.quantity
+                                    ).toFixed(2)}
                               </td>
                               <td className='product__remove'>
                                 <Link

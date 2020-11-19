@@ -92,8 +92,15 @@ const Wishlist = ({
                                 )}
                               </td>
                               <td className='product__wishlist-cart'>
-                                {wishlistItem.stock &&
-                                wishlistItem.stock > 0 ? (
+                                {wishlistItem.variation &&
+                                wishlistItem.variation.length >= 1 ? (
+                                  <Link
+                                    to={`${process.env.PUBLIC_URL}/product/${wishlistItem.id}`}
+                                  >
+                                    Select option
+                                  </Link>
+                                ) : wishlistItem.stock &&
+                                  wishlistItem.stock > 0 ? (
                                   <Link>Add To Cart</Link>
                                 ) : (
                                   <button disabled className='active'>
