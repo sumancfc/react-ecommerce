@@ -206,12 +206,15 @@ const Profile = () => {
                       >
                         <div class='account__content'>
                           <h3>Account Details</h3>
-                          <div class='account__form'>
-                            <form action='#'>
+                          <div class='account__htmlForm'>
+                            <htmlForm action='#'>
                               <div class='row'>
                                 <div class='col-lg-6'>
                                   <div class='input__item'>
-                                    <label for='first-name' class='required'>
+                                    <label
+                                      htmlFor='first-name'
+                                      class='required'
+                                    >
                                       First Name
                                     </label>
                                     <input type='text' id='first-name' />
@@ -219,7 +222,7 @@ const Profile = () => {
                                 </div>
                                 <div class='col-lg-6'>
                                   <div class='input__item'>
-                                    <label for='last-name' class='required'>
+                                    <label htmlFor='last-name' class='required'>
                                       Last Name
                                     </label>
                                     <input type='text' id='last-name' />
@@ -227,13 +230,13 @@ const Profile = () => {
                                 </div>
                               </div>
                               <div class='input__item'>
-                                <label for='display-name' class='required'>
+                                <label htmlFor='display-name' class='required'>
                                   Display Name
                                 </label>
                                 <input type='text' id='display-name' />
                               </div>
                               <div class='input__item'>
-                                <label for='email' class='required'>
+                                <label htmlFor='email' class='required'>
                                   Email Addres
                                 </label>
                                 <input type='email' id='email' />
@@ -241,7 +244,7 @@ const Profile = () => {
                               <fieldset>
                                 <legend>Password change</legend>
                                 <div class='input__item'>
-                                  <label for='current-pwd' class='required'>
+                                  <label htmlFor='current-pwd' class='required'>
                                     Current Password
                                   </label>
                                   <input type='password' id='current-pwd' />
@@ -249,7 +252,7 @@ const Profile = () => {
                                 <div class='row'>
                                   <div class='col-lg-6'>
                                     <div class='input__item'>
-                                      <label for='new-pwd' class='required'>
+                                      <label htmlFor='new-pwd' class='required'>
                                         New Password
                                       </label>
                                       <input type='password' id='new-pwd' />
@@ -257,7 +260,10 @@ const Profile = () => {
                                   </div>
                                   <div class='col-lg-6'>
                                     <div class='input__item'>
-                                      <label for='confirm-pwd' class='required'>
+                                      <label
+                                        htmlFor='confirm-pwd'
+                                        class='required'
+                                      >
                                         Confirm Password
                                       </label>
                                       <input type='password' id='confirm-pwd' />
@@ -268,7 +274,7 @@ const Profile = () => {
                               <div class='input__item'>
                                 <button class='btn-check'>Save Changes</button>
                               </div>
-                            </form>
+                            </htmlForm>
                           </div>
                         </div>
                       </div>

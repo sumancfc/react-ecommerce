@@ -18,11 +18,11 @@ const Checkout = () => {
             </p>
             <div class='checkout__login-info'>
               <p>
-                If you have shopped with us before, please enter your details in
-                the boxes below. If you are a new customer, please proceed to
-                the Billing and Shipping section.
+                If you have shopped with us behtmlFore, please enter your
+                details in the boxes below. If you are a new customer, please
+                proceed to the Billing and Shipping section.
               </p>
-              <form action='#'>
+              <htmlForm action='#'>
                 <div class='row'>
                   <div class='col-lg-6 col-md-6'>
                     <div class='checkout__login'>
@@ -53,7 +53,7 @@ const Checkout = () => {
                 <div class='lost__password'>
                   <a href='#'>Lost your password?</a>
                 </div>
-              </form>
+              </htmlForm>
             </div>
           </div>
           <div class='customer__area mb-20'>
@@ -64,10 +64,10 @@ const Checkout = () => {
               </a>
             </p>
             <div class='coupon__area'>
-              <form action='#'>
+              <htmlForm action='#'>
                 <input type='text' placeholder='Coupon code' />
                 <input type='submit' value='Apply Coupon' />
-              </form>
+              </htmlForm>
             </div>
           </div>
           <div class='checkout__wrap pt-30'>
@@ -292,7 +292,7 @@ const Checkout = () => {
                   <div class='add__info'>
                     <label>Order notes</label>
                     <textarea
-                      placeholder='Notes about your order, e.g. special notes for delivery. '
+                      placeholder='Notes about your order, e.g. special notes htmlFor delivery. '
                       name='message'
                     ></textarea>
                   </div>
@@ -352,7 +352,7 @@ const Checkout = () => {
                           checked='checked'
                           name='payment method'
                         />
-                        <label for='payment_method'>
+                        <label htmlFor='payment_method'>
                           {" "}
                           Direct Bank Transfer{" "}
                         </label>
@@ -371,7 +371,7 @@ const Checkout = () => {
                           value='cheque'
                           name='payment method'
                         />
-                        <label for='payment__method'>Check payments</label>
+                        <label htmlFor='payment__method'>Check payments</label>
                         <div class='payment__box payment_method_bacs'>
                           <p>
                             Make your payment directly into our bank account.
@@ -387,7 +387,9 @@ const Checkout = () => {
                           value='cheque'
                           name='payment method'
                         />
-                        <label for='payment__method-3'>Cash on delivery </label>
+                        <label htmlFor='payment__method-3'>
+                          Cash on delivery{" "}
+                        </label>
                         <div class='payment__box payment_method_bacs'>
                           <p>
                             Make your payment directly into our bank account.
@@ -403,7 +405,7 @@ const Checkout = () => {
                           value='cheque'
                           name='payment method'
                         />
-                        <label for='payment__method-4'>PayPal</label>
+                        <label htmlFor='payment__method-4'>PayPal</label>
                         <div class='payment__box payment_method_bacs'>
                           <p>
                             Make your payment directly into our bank account.

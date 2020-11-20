@@ -582,14 +582,19 @@
   justify-content: flex-end;
 }
 
-.shopping__cart-content ul li .shopping__cart-s-delete a {
+.shopping__cart-content ul li .shopping__cart-s-delete button {
   font-size: 16px;
   color: #282828;
   margin-top: -4px;
 }
 
-.shopping__cart-content ul li .shopping__cart-s-delete a:hover {
+.shopping__cart-content ul li .shopping__cart-s-delete button:hover {
   color: #ff5151;
+}
+
+.shopping__cart-content ul li .shopping__cart-s-delete button i {
+  font-size: 16px;
+  margin-right: 0;
 }
 
 .shopping__cart-content .shopping__cart-total {
@@ -615,11 +620,8 @@
   text-transform: capitalize;
   background-color: #ff7474;
   color: #ffffff;
-  border: 1px solid transparent;
-}
-
-.shopping__cart-content .shopping__cart-btn a:hover {
-  border: 1px solid #373737;
+  border: none;
+  outline: none;
 }
 
 .header__nav-sticky.stick {
@@ -1133,11 +1135,11 @@
   margin: 0 70px;
 }
 
-.header__cart-1 {
+.header__cart {
   text-align: right;
 }
 
-.header__cart-1 button {
+.header__cart button {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -1146,7 +1148,7 @@
   transition: all 0.3s ease 0s;
 }
 
-.header__cart-1 button i {
+.header__cart button i {
   font-size: 30px;
   color: #fff;
   margin-right: 25px;
@@ -1154,7 +1156,7 @@
   transition: all 0.3s ease 0s;
 }
 
-.header__cart-1 button span.header__cart-price {
+.header__cart button span.header__cart-price {
   font-size: 18px;
   color: #fff;
   font-weight: 500;
@@ -1162,7 +1164,7 @@
   letter-spacing: 0.2px;
 }
 
-.header__cart-1 button span.cart__items-count {
+.header__cart button span.cart__items-count {
   position: absolute;
   font-size: 12px;
   height: 25px;
@@ -1177,19 +1179,19 @@
   border: 1px solid #fff;
 }
 
-.header__cart-1 button:hover i {
+.header__cart button:hover i {
   color: #ff5151;
 }
 
-.header__cart-1.header__cart-white button i {
+.header__cart.header__cart-white button i {
   color: #030512;
 }
 
-.header__cart-1.header__cart-white button span.header__cart-price {
+.header__cart.header__cart-white button span.header__cart-price {
   color: #ea2e49;
 }
 
-.header__cart-1.header__cart-white button span.cart__items-count {
+.header__cart.header__cart-white button span.cart__items-count {
   color: #030512;
   border: 1px solid #030512;
 }
