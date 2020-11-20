@@ -13,7 +13,7 @@ const MobileCategoryMenu = () => {
       <div className='container'>
         <div className='header__menu-category'>
           <h3 className='header__menu-category-show' onClick={categoryClick}>
-            <Link href='#'>
+            <Link to='#'>
               <img
                 className='category__menu-non-stick'
                 src='assets/images/icon-img/category-menu.png'
@@ -37,7 +37,7 @@ const MobileCategoryMenu = () => {
             <nav>
               <ul>
                 <li className='mobile__category-dd'>
-                  <Link href='#' onClick={categoryClick}>
+                  <Link to='#' onClick={categoryClick}>
                     Computer <span className='la la-angle-down'></span>
                   </Link>
                   <ul
@@ -46,344 +46,344 @@ const MobileCategoryMenu = () => {
                     }
                   >
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
                 <li className='mobile__category-dd'>
-                  <Link href='#'>
+                  <Link to='#'>
                     Accessories <span className='la la-angle-down'></span>
                   </Link>
                   <ul className='category__hide-dsk'>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
                 <li className='mobile__category-dd'>
-                  <Link href='#'>
+                  <Link to='#'>
                     Computer Kit <span className='la la-angle-down'></span>
                   </Link>
                   <ul className='category__hide-dsk'>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
                 <li className='mobile__category-dd'>
-                  <Link href='#'>
+                  <Link to='#'>
                     Laptop <span className='la la-angle-down'></span>
                   </Link>
                   <ul className='category__hide-dsk'>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
                 <li className='mobile__category-dd'>
-                  <Link href='#'>Laptop Accessories </Link>
+                  <Link to='#'>Laptop Accessories </Link>
                 </li>
                 <li className='mobile__category-dd'>
-                  <Link href='#'>Smartwatch</Link>
+                  <Link to='#'>Smartwatch</Link>
                 </li>
                 <li className='mobile__category-dd'>
-                  <Link href='#'>
+                  <Link to='#'>
                     Accessories <span className='la la-angle-down'></span>
                   </Link>
                   <ul className='category__hide-dsk'>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
                 <li className='mobile__category-dd'>
-                  <Link href='#'>Cameras</Link>
+                  <Link to='#'>Cameras</Link>
                 </li>
                 <li className='mobile__category-dd'>
-                  <Link href='#'>
+                  <Link to='#'>
                     Mobile Phone <span className='la la-angle-down'></span>
                   </Link>
                   <ul className='category__hide-dsk'>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                     <li className='category__sub-dd category__sub-style'>
-                      <Link href='#'>
+                      <Link to='#'>
                         Laptop Accessories <i className='la la-angle-down'></i>
                       </Link>
                       <ul>
                         <li>
-                          <Link href='shop.html'>Laptop Keyboard</Link>
+                          <Link to='/shop'>Laptop Keyboard</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Laptop Mouse</Link>
+                          <Link to='/shop'>Laptop Mouse</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>Bluetooth Speaker</Link>
+                          <Link to='/shop'>Bluetooth Speaker</Link>
                         </li>
                         <li>
-                          <Link href='shop.html'>LED Light</Link>
+                          <Link to='/shop'>LED Light</Link>
                         </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
                 <li className='mobile__category-dd'>
-                  <Link href='#'>Drone</Link>
+                  <Link to='#'>Drone</Link>
                 </li>
                 <li className='mobile__category-dd'>
-                  <Link href='#'>Drone Cameras</Link>
+                  <Link to='#'>Drone Cameras</Link>
                 </li>
                 <li className='mobile__category-dd'>
-                  <Link href='#'>Apple Products </Link>
+                  <Link to='#'>Apple Products </Link>
                 </li>
               </ul>
             </nav>

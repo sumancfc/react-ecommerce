@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Logo = ({ className }) => {
   return (
     <div className={`${className}`}>
-      <Link href='/'>Ecommerce</Link>
+      <Link to='/'>Ecommerce</Link>
     </div>
   );
 };

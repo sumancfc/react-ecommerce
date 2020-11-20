@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../logo";
-import MobileCategoryMenu from "./common/MobileCategoryMenu";
+// import MobileCategoryMenu from "./common/MobileCategoryMenu";
 import CartIcon from "./common/CartIcon";
+import Search from "../search";
 
 const MobileHeader = () => {
   const openMobileMenu = () => {
@@ -39,7 +40,7 @@ const MobileHeader = () => {
           </div>
         </div>
       </div>
-      <MobileCategoryMenu />
+      <Search className='col-sm-12 header__search-wrap mobile__search' />
     </>
   );
 };

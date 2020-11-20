@@ -24,7 +24,7 @@ export const FooterOne = [
 export const FooterTwo = [
   {
     title: "About Us",
-    url: "/",
+    url: "/about-us",
   },
   {
     title: "Affilate",
@@ -35,34 +35,35 @@ export const FooterTwo = [
     url: "/",
   },
   {
-    title: "Contact",
+    title: "Our Blog",
     url: "/",
   },
   {
-    title: "Services",
-    url: "/",
+    title: "Contact",
+    url: "/contact-us",
   },
 ];
 
 export const FooterThree = [
   {
-    title: "Our Blog",
-    url: "/",
+    title: "Shop",
+    url: "/shop",
   },
   {
     title: "Checkout",
-    url: "/",
+    url: "/checkout",
   },
   {
     title: "My account",
-    url: "/",
+    url: "/profile",
   },
-  {
-    title: "Shop",
-    url: "/",
-  },
+
   {
     title: "Wishlist",
-    url: "/",
+    url: "/wishlist",
+  },
+  {
+    title: "Compare",
+    url: "/compare",
   },
 ];

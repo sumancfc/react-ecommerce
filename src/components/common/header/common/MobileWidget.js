@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MobileWidget = () => {
   return (
@@ -7,30 +8,30 @@ const MobileWidget = () => {
         <div className='header__contact-info'>
           <ul className='header__contact-info-list'>
             <li>
-              <i className='fa fa-phone'></i>{" "}
-              <a href='tel://12452456012'>(1245) 2456 012 </a>
+              <i className='fa fa-phone'></i>
+              <Link to='tel:12452456012'>(1245) 2456 012 </Link>
             </li>
             <li>
-              <i className='fa fa-envelope'></i>{" "}
-              <a href='mailto:info@yourdomain.com'>info@yourdomain.com</a>
+              <i className='fa fa-envelope'></i>
+              <Link to='mailto:info@yourdomain.com'>info@yourdomain.com</Link>
             </li>
           </ul>
         </div>
       </div>
 
       <div className='offcanvas__social-widget'>
-        <a href='//twitter.com' title='Twitter'>
+        <Link to='www.twitter.com' title='Twitter'>
           <i className='fa fa-twitter'></i>
-        </a>
-        <a href='//instagram.com' title='Instagram'>
+        </Link>
+        <Link to='www.instagram.com' title='Instagram'>
           <i className='fa fa-instagram'></i>
-        </a>
-        <a href='//facebook.com' title='Facebook'>
+        </Link>
+        <Link to='www.facebook.com' title='Facebook'>
           <i className='fa fa-facebook'></i>
-        </a>
-        <a href='//pinterest.com' title='Pinterest'>
+        </Link>
+        <Link to='www.pinterest.com' title='Pinterest'>
           <i className='fa fa-pinterest'></i>
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Search from "../search";
 import CategoryMenu from "./common/CategoryMenu";
 import MainMenu from "./common/MainMenu";
 import MiddleHeader from "./common/MiddleHeader";
@@ -40,7 +41,12 @@ const Header = () => {
           >
             <div className='container'>
               <div className='row align-items-center'>
-                <CategoryMenu />
+                {scroll > headerTop ? (
+                  <Search className='col-md-4 header__search-wrap' />
+                ) : (
+                  <CategoryMenu />
+                )}
+
                 <MainMenu />
               </div>
             </div>

@@ -40,16 +40,16 @@ const CategoryMenu = () => {
                     <h4>Laptop Accessories</h4>
                     <ul>
                       <li>
-                        <Link to='shop.html'>Laptop Keyboard</Link>
+                        <Link to='/shop'>Laptop Keyboard</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Laptop Mouse</Link>
+                        <Link to='/shop'>Laptop Mouse</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Bluetooth Speaker</Link>
+                        <Link to='/shop'>Bluetooth Speaker</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>LED Light</Link>
+                        <Link to='/shop'>LED Light</Link>
                       </li>
                     </ul>
                   </div>
@@ -57,16 +57,16 @@ const CategoryMenu = () => {
                     <h4>Laptop Accessories</h4>
                     <ul>
                       <li>
-                        <Link to='shop.html'>Laptop Keyboard</Link>
+                        <Link to='/shop'>Laptop Keyboard</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Laptop Mouse</Link>
+                        <Link to='/shop'>Laptop Mouse</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Bluetooth Speaker</Link>
+                        <Link to='/shop'>Bluetooth Speaker</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>LED Light</Link>
+                        <Link to='/shop'>LED Light</Link>
                       </li>
                     </ul>
                   </div>
@@ -74,16 +74,16 @@ const CategoryMenu = () => {
                     <h4>Laptop Accessories</h4>
                     <ul>
                       <li>
-                        <Link to='shop.html'>Laptop Keyboard</Link>
+                        <Link to='/shop'>Laptop Keyboard</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Laptop Mouse</Link>
+                        <Link to='/shop'>Laptop Mouse</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Bluetooth Speaker</Link>
+                        <Link to='/shop'>Bluetooth Speaker</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>LED Light</Link>
+                        <Link to='/shop'>LED Light</Link>
                       </li>
                     </ul>
                   </div>
@@ -98,16 +98,16 @@ const CategoryMenu = () => {
                     <h4>Laptop Accessories</h4>
                     <ul>
                       <li>
-                        <Link to='shop.html'>Laptop Keyboard</Link>
+                        <Link to='/shop'>Laptop Keyboard</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Laptop Mouse</Link>
+                        <Link to='/shop'>Laptop Mouse</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Bluetooth Speaker</Link>
+                        <Link to='/shop'>Bluetooth Speaker</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>LED Light</Link>
+                        <Link to='/shop'>LED Light</Link>
                       </li>
                     </ul>
                   </div>
@@ -115,16 +115,16 @@ const CategoryMenu = () => {
                     <h4>Laptop Accessories</h4>
                     <ul>
                       <li>
-                        <Link to='shop.html'>Laptop Keyboard</Link>
+                        <Link to='/shop'>Laptop Keyboard</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Laptop Mouse</Link>
+                        <Link to='/shop'>Laptop Mouse</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Bluetooth Speaker</Link>
+                        <Link to='/shop'>Bluetooth Speaker</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>LED Light</Link>
+                        <Link to='/shop'>LED Light</Link>
                       </li>
                     </ul>
                   </div>
@@ -139,16 +139,16 @@ const CategoryMenu = () => {
                     <h4>Laptop Accessories</h4>
                     <ul>
                       <li>
-                        <Link to='shop.html'>Laptop Keyboard</Link>
+                        <Link to='/shop'>Laptop Keyboard</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Laptop Mouse</Link>
+                        <Link to='/shop'>Laptop Mouse</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Bluetooth Speaker</Link>
+                        <Link to='/shop'>Bluetooth Speaker</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>LED Light</Link>
+                        <Link to='/shop'>LED Light</Link>
                       </li>
                     </ul>
                   </div>
@@ -156,16 +156,16 @@ const CategoryMenu = () => {
                     <h4>Laptop Accessories</h4>
                     <ul>
                       <li>
-                        <Link to='shop.html'>Laptop Keyboard</Link>
+                        <Link to='/shop'>Laptop Keyboard</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Laptop Mouse</Link>
+                        <Link to='/shop'>Laptop Mouse</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Bluetooth Speaker</Link>
+                        <Link to='/shop'>Bluetooth Speaker</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>LED Light</Link>
+                        <Link to='/shop'>LED Light</Link>
                       </li>
                     </ul>
                   </div>
@@ -173,16 +173,16 @@ const CategoryMenu = () => {
                     <h4>Laptop Accessories</h4>
                     <ul>
                       <li>
-                        <Link to='shop.html'>Laptop Keyboard</Link>
+                        <Link to='/shop'>Laptop Keyboard</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Laptop Mouse</Link>
+                        <Link to='/shop'>Laptop Mouse</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Bluetooth Speaker</Link>
+                        <Link to='/shop'>Bluetooth Speaker</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>LED Light</Link>
+                        <Link to='/shop'>LED Light</Link>
                       </li>
                     </ul>
                   </div>
@@ -214,44 +214,44 @@ const CategoryMenu = () => {
                     <h4>Laptop Accessories</h4>
                     <ul>
                       <li>
-                        <Link to='shop.html'>Laptop Keyboard</Link>
+                        <Link to='/shop'>Laptop Keyboard</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Laptop Mouse</Link>
+                        <Link to='/shop'>Laptop Mouse</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>Bluetooth Speaker</Link>
+                        <Link to='/shop'>Bluetooth Speaker</Link>
                       </li>
                       <li>
-                        <Link to='shop.html'>LED Light</Link>
+                        <Link to='/shop'>LED Light</Link>
                       </li>
                     </ul>
                   </div>
                 </div>
               </li>
               <li className='mobile__category-dd'>
-                <Link to='shop.html'>Laptop Accessories </Link>
+                <Link to='/shop'>Laptop Accessories </Link>
               </li>
               <li className='mobile__category-dd'>
-                <Link to='shop.html'>Smartwatch</Link>
+                <Link to='/shop'>Smartwatch</Link>
               </li>
               <li className='mobile__category-dd'>
                 <Link to='#'>Accessories</Link>
               </li>
               <li className='mobile__category-dd'>
-                <Link to='shop.html'>Cameras</Link>
+                <Link to='/shop'>Cameras</Link>
               </li>
               <li className='mobile__category-dd'>
                 <Link to='#'>Mobile Phone</Link>
               </li>
               <li className='mobile__category-dd'>
-                <Link to='shop.html'>Drone</Link>
+                <Link to='/shop'>Drone</Link>
               </li>
               <li className='mobile__category-dd'>
-                <Link to='shop.html'>Drone Cameras</Link>
+                <Link to='/shop'>Drone Cameras</Link>
               </li>
               <li className='mobile__category-dd'>
-                <Link to='shop.html'>Apple Products </Link>
+                <Link to='/shop'>Apple Products </Link>
               </li>
             </ul>
           </nav>

@@ -1,64 +1,68 @@
 import React from "react";
 import Breadcrumb from "../components/common/breadcrumb";
+import Button from "../components/common/button";
 import Layout from "../components/Layouts";
 
 const Profile = () => {
   return (
     <Layout>
       <Breadcrumb pageTitle='Profile' />
-      <div class='account__area pt-100 pb-100'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-lg-12'>
-              <div class='account__page-wrap'>
-                <div class='row'>
-                  <div class='col-lg-3 col-md-4'>
-                    <div class='account__tab-menu nav bg-gray' role='tablist'>
-                      <a href='#dashboad' class='active' data-toggle='tab'>
-                        <i class='fa fa-dashboard'></i> Dashboard
+      <div className='account__area pt-100 pb-100'>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-lg-12'>
+              <div className='account__page-wrap'>
+                <div className='row'>
+                  <div className='col-lg-3 col-md-4'>
+                    <div
+                      className='account__tab-menu nav bg-gray'
+                      role='tablist'
+                    >
+                      <a href='#dashboad' className='active' data-toggle='tab'>
+                        <i className='fa fa-dashboard'></i> Dashboard
                       </a>
                       <a href='#orders' data-toggle='tab'>
-                        <i class='fa fa-cart-arrow-down'></i> Orders
+                        <i className='fa fa-cart-arrow-down'></i> Orders
                       </a>
                       <a href='#download' data-toggle='tab'>
-                        <i class='fa fa-cloud-download'></i> Download
+                        <i className='fa fa-cloud-download'></i> Download
                       </a>
                       <a href='#payment-method' data-toggle='tab'>
-                        <i class='fa fa-credit-card'></i> Payment Method
+                        <i className='fa fa-credit-card'></i> Payment Method
                       </a>
                       <a href='#address-edit' data-toggle='tab'>
-                        <i class='fa fa-map-marker'></i> address
+                        <i className='fa fa-map-marker'></i> address
                       </a>
                       <a href='#account-info' data-toggle='tab'>
-                        <i class='fa fa-user'></i> Account Details
+                        <i className='fa fa-user'></i> Account Details
                       </a>
                       <a href='login-register.html'>
-                        <i class='fa fa-sign-out'></i> Logout
+                        <i className='fa fa-sign-out'></i> Logout
                       </a>
                     </div>
                   </div>
 
-                  <div class='col-lg-9 col-md-8'>
-                    <div class='tab-content' id='account'>
+                  <div className='col-lg-9 col-md-8'>
+                    <div className='tab-content' id='account'>
                       <div
-                        class='tab-pane fade show active'
+                        className='tab-pane fade show active'
                         id='dashboad'
                         role='tabpanel'
                       >
-                        <div class='account__content'>
+                        <div className='account__content'>
                           <h3>Dashboard</h3>
-                          <div class='header__top-left'>
+                          <div className='header__top-left'>
                             <p>
                               Hello, <strong>User Name</strong> (If Not
                               <strong>Username !</strong>
-                              <a href='login-register.html' class='logout'>
+                              <a href='login-register.html' className='logout'>
                                 Logout
                               </a>
                               )
                             </p>
                           </div>
 
-                          <p class='mb-0'>
+                          <p className='mb-0'>
                             From your account dashboard. you can easily check &
                             view your recent orders, manage your shipping and
                             billing addresses and edit your password and account
@@ -67,12 +71,16 @@ const Profile = () => {
                         </div>
                       </div>
 
-                      <div class='tab-pane fade' id='orders' role='tabpanel'>
-                        <div class='account__content'>
+                      <div
+                        className='tab-pane fade'
+                        id='orders'
+                        role='tabpanel'
+                      >
+                        <div className='account__content'>
                           <h3>Orders</h3>
-                          <div class='account__table table-responsive text-center'>
-                            <table class='table table-bordered'>
-                              <thead class='thead-light'>
+                          <div className='account__table table-responsive text-center'>
+                            <table className='table table-bordered'>
+                              <thead className='thead-light'>
                                 <tr>
                                   <th>Order</th>
                                   <th>Date</th>
@@ -88,7 +96,7 @@ const Profile = () => {
                                   <td>Pending</td>
                                   <td>$3000</td>
                                   <td>
-                                    <a href='cart.html' class='btn-check'>
+                                    <a href='cart.html' className='btn-check'>
                                       View
                                     </a>
                                   </td>
@@ -99,7 +107,7 @@ const Profile = () => {
                                   <td>Approved</td>
                                   <td>$200</td>
                                   <td>
-                                    <a href='cart.html' class='btn-check'>
+                                    <a href='cart.html' className='btn-check'>
                                       View
                                     </a>
                                   </td>
@@ -110,7 +118,7 @@ const Profile = () => {
                                   <td>On Hold</td>
                                   <td>$990</td>
                                   <td>
-                                    <a href='cart.html' class='btn-check'>
+                                    <a href='cart.html' className='btn-check'>
                                       View
                                     </a>
                                   </td>
@@ -121,12 +129,16 @@ const Profile = () => {
                         </div>
                       </div>
 
-                      <div class='tab-pane fade' id='download' role='tabpanel'>
-                        <div class='account__content'>
+                      <div
+                        className='tab-pane fade'
+                        id='download'
+                        role='tabpanel'
+                      >
+                        <div className='account__content'>
                           <h3>Downloads</h3>
-                          <div class='account__table table-responsive text-center'>
-                            <table class='table table-bordered'>
-                              <thead class='thead-light'>
+                          <div className='account__table table-responsive text-center'>
+                            <table className='table table-bordered'>
+                              <thead className='thead-light'>
                                 <tr>
                                   <th>Product</th>
                                   <th>Date</th>
@@ -140,8 +152,8 @@ const Profile = () => {
                                   <td>Aug 22, 2018</td>
                                   <td>Yes</td>
                                   <td>
-                                    <a href='#' class='btn-check'>
-                                      <i class='fa fa-cloud-download'></i>
+                                    <a href='#' className='btn-check'>
+                                      <i className='fa fa-cloud-download'></i>
                                       Download File
                                     </a>
                                   </td>
@@ -151,8 +163,8 @@ const Profile = () => {
                                   <td>Sep 12, 2018</td>
                                   <td>Never</td>
                                   <td>
-                                    <a href='#' class='btn-check'>
-                                      <i class='fa fa-cloud-download'></i>
+                                    <a href='#' className='btn-check'>
+                                      <i className='fa fa-cloud-download'></i>
                                       Download File
                                     </a>
                                   </td>
@@ -164,24 +176,24 @@ const Profile = () => {
                       </div>
 
                       <div
-                        class='tab-pane fade'
+                        className='tab-pane fade'
                         id='payment-method'
                         role='tabpanel'
                       >
-                        <div class='account__content'>
+                        <div className='account__content'>
                           <h3>Payment Method</h3>
-                          <p class='message__saved'>
+                          <p className='message__saved'>
                             You Can't Saved Your Payment Method yet.
                           </p>
                         </div>
                       </div>
 
                       <div
-                        class='tab-pane fade'
+                        className='tab-pane fade'
                         id='address-edit'
                         role='tabpanel'
                       >
-                        <div class='account__content'>
+                        <div className='account__content'>
                           <h3>Billing Address</h3>
                           <address>
                             <p>
@@ -193,76 +205,88 @@ const Profile = () => {
                             </p>
                             <p>Mobile: (123) 456-7890</p>
                           </address>
-                          <a href='#' class='btn-check'>
-                            <i class='fa fa-edit'></i> Edit Address
+                          <a href='#' className='btn-check'>
+                            <i className='fa fa-edit'></i> Edit Address
                           </a>
                         </div>
                       </div>
 
                       <div
-                        class='tab-pane fade'
+                        className='tab-pane fade'
                         id='account-info'
                         role='tabpanel'
                       >
-                        <div class='account__content'>
+                        <div className='account__content'>
                           <h3>Account Details</h3>
-                          <div class='account__htmlForm'>
-                            <htmlForm action='#'>
-                              <div class='row'>
-                                <div class='col-lg-6'>
-                                  <div class='input__item'>
+                          <div className='account__form'>
+                            <form action='#'>
+                              <div className='row'>
+                                <div className='col-lg-6'>
+                                  <div className='input__item'>
                                     <label
                                       htmlFor='first-name'
-                                      class='required'
+                                      className='required'
                                     >
                                       First Name
                                     </label>
                                     <input type='text' id='first-name' />
                                   </div>
                                 </div>
-                                <div class='col-lg-6'>
-                                  <div class='input__item'>
-                                    <label htmlFor='last-name' class='required'>
+                                <div className='col-lg-6'>
+                                  <div className='input__item'>
+                                    <label
+                                      htmlFor='last-name'
+                                      className='required'
+                                    >
                                       Last Name
                                     </label>
                                     <input type='text' id='last-name' />
                                   </div>
                                 </div>
                               </div>
-                              <div class='input__item'>
-                                <label htmlFor='display-name' class='required'>
+                              <div className='input__item'>
+                                <label
+                                  htmlFor='display-name'
+                                  className='required'
+                                >
                                   Display Name
                                 </label>
                                 <input type='text' id='display-name' />
                               </div>
-                              <div class='input__item'>
-                                <label htmlFor='email' class='required'>
+                              <div className='input__item'>
+                                <label htmlFor='email' className='required'>
                                   Email Addres
                                 </label>
                                 <input type='email' id='email' />
                               </div>
                               <fieldset>
                                 <legend>Password change</legend>
-                                <div class='input__item'>
-                                  <label htmlFor='current-pwd' class='required'>
+                                <div className='input__item'>
+                                  <label
+                                    htmlFor='current-pwd'
+                                    className='required'
+                                  >
                                     Current Password
                                   </label>
                                   <input type='password' id='current-pwd' />
                                 </div>
-                                <div class='row'>
-                                  <div class='col-lg-6'>
-                                    <div class='input__item'>
-                                      <label htmlFor='new-pwd' class='required'>
+                                <div className='row'>
+                                  <div className='col-lg-6'>
+                                    <div className='input__item'>
+                                      <label
+                                        htmlFor='new-pwd'
+                                        className='required'
+                                      >
                                         New Password
                                       </label>
                                       <input type='password' id='new-pwd' />
                                     </div>
                                   </div>
-                                  <div class='col-lg-6'>
-                                    <div class='input__item'>
+                                  <div className='col-lg-6'>
+                                    <div className='input__item'>
                                       <label
                                         htmlFor='confirm-pwd'
-                                        class='required'
+                                        className='required'
                                       >
                                         Confirm Password
                                       </label>
@@ -271,10 +295,12 @@ const Profile = () => {
                                   </div>
                                 </div>
                               </fieldset>
-                              <div class='input__item'>
-                                <button class='btn-check'>Save Changes</button>
+                              <div className='input__item'>
+                                <Button className='btn-check'>
+                                  Save Changes
+                                </Button>
                               </div>
-                            </htmlForm>
+                            </form>
                           </div>
                         </div>
                       </div>

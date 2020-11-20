@@ -14,7 +14,7 @@ const MainMenu = () => {
               <Link to='/about-us'>About Us</Link>
             </li>
             <li className='menu__angle'>
-              <Link to='#'>Shop</Link>
+              <Link to='/shop'>Shop</Link>
               <ul className='header__mega-menu header__mega-menu-nmg'>
                 <li>
                   <Link className='mega__menu-title' to='#'>
@@ -44,7 +44,7 @@ const MainMenu = () => {
                       <Link to='/shop'>Pants</Link>
                     </li>
                     <li>
-                      <Link to='/'>Shoes</Link>
+                      <Link to='/shop'>Shoes</Link>
                     </li>
                   </ul>
                 </li>
@@ -60,7 +60,7 @@ const MainMenu = () => {
                       <Link to='/shop'>Pants</Link>
                     </li>
                     <li>
-                      <Link to='/'>Shoes</Link>
+                      <Link to='/shop'>Shoes</Link>
                     </li>
                   </ul>
                 </li>
@@ -76,7 +76,7 @@ const MainMenu = () => {
                       <Link to='/shop'>Pants</Link>
                     </li>
                     <li>
-                      <Link to='/'>Shoes</Link>
+                      <Link to='/shop'>Shoes</Link>
                     </li>
                   </ul>
                 </li>

@@ -13,6 +13,7 @@ const ShopTopbar = ({
       <div className='shop__topbar-left'>
         <div className='view__mode nav'>
           <Link
+            to='#'
             className='active'
             onClick={(e) => {
               getLayout("grid");
@@ -22,6 +23,7 @@ const ShopTopbar = ({
             <i className='la la-th'></i>
           </Link>
           <Link
+            to='#'
             onClick={(e) => {
               getLayout("list");
               setActiveLayout(e);

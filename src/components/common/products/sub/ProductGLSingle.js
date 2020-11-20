@@ -126,7 +126,11 @@ const ProductGLSingle = ({
                   />
                 </Link>
                 <div className='product__list-quickview'>
-                  <Link onClick={() => setSModal(true)} title='Quick View'>
+                  <Link
+                    to='#'
+                    onClick={() => setSModal(true)}
+                    title='Quick View'
+                  >
                     <i className='la la-plus'></i>
                   </Link>
                 </div>

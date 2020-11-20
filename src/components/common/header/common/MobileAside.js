@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import MobileWidget from "./MobileWidget";
 import MobileNavMenu from "./MobileNavMenu";
-import MobileSearch from "./MobileSearch";
+// import MobileSearch from "./MobileSearch";
 
 const MobileAside = () => {
   useEffect(() => {
@@ -55,7 +55,7 @@ const MobileAside = () => {
       <div className='offcanvas__wrapper'>
         <div className='offcanvas__inner-content'>
           {/* mobile search */}
-          <MobileSearch />
+          {/* <MobileSearch /> */}
 
           {/* mobile nav menu */}
           <MobileNavMenu />
