@@ -9,14 +9,14 @@ import {
   addToCart,
   decreaseQuantity,
   deleteFromCart,
-  deleteAllFromCart,
   cartItemStock,
+  deleteAllFromCart,
 } from "../actions/cartActions";
 
 const Cart = ({
-  addToCart,
   cartItems,
   decreaseQuantity,
+  addToCart,
   deleteFromCart,
   deleteAllFromCart,
 }) => {
@@ -111,23 +111,24 @@ const Cart = ({
                                   </span>
                                 )}
                               </td>
+
                               <td className='product__quantity'>
                                 <div className='cart__plus-minus'>
-                                  <div
+                                  <button
                                     className='dec qtybutton'
                                     onClick={() =>
                                       decreaseQuantity(cartItem, addToast)
                                     }
                                   >
                                     -
-                                  </div>
+                                  </button>
                                   <input
                                     className='cart__plus-minus-box'
                                     type='text'
                                     value={cartItem.quantity}
                                     readOnly
                                   />
-                                  <div
+                                  <button
                                     className='inc qtybutton'
                                     onClick={() =>
                                       addToCart(
@@ -148,7 +149,7 @@ const Cart = ({
                                     }
                                   >
                                     +
-                                  </div>
+                                  </button>
                                 </div>
                               </td>
                               <td className='product__subtotal'>

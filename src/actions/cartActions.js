@@ -5,6 +5,7 @@ import {
   DECREASE_QUANTITY,
 } from "../constants/index";
 
+//add to cart
 export const addToCart = (
   item,
   addToast,
@@ -35,6 +36,7 @@ export const addToCart = (
     });
   };
 };
+
 //decrease from cart
 export const decreaseQuantity = (item, addToast) => {
   return (dispatch) => {
@@ -47,6 +49,7 @@ export const decreaseQuantity = (item, addToast) => {
     dispatch({ type: DECREASE_QUANTITY, payload: item });
   };
 };
+
 //delete from cart
 export const deleteFromCart = (item, addToast) => {
   return (dispatch) => {
@@ -56,6 +59,7 @@ export const deleteFromCart = (item, addToast) => {
     dispatch({ type: DELETE_FROM_CART, payload: item });
   };
 };
+
 //delete all from cart
 export const deleteAllFromCart = (addToast) => {
   return (dispatch) => {

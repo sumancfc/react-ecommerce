@@ -769,7 +769,7 @@ textarea {
   td.product__quantity
   .cart__plus-minus
   .dec.qtybutton {
-  border-right: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   height: 40px;
   left: 0;
   padding-top: 8px;
@@ -783,7 +783,7 @@ textarea {
   td.product__quantity
   .cart__plus-minus
   .inc.qtybutton {
-  border-left: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   height: 40px;
   padding-top: 9px;
   right: 0;
@@ -2053,6 +2053,23 @@ textarea {
 .compare__table .table tbody tr td.product__instock {
   font-size: 14px;
   font-weight: 400;
+}
+
+.compare__table .table tbody > tr td.compare__price span.amount {
+  color: #333;
+  font-weight: 500;
+}
+
+.compare__table .table tbody > tr td.compare__price span.old {
+  margin-right: 10px;
+  text-decoration: line-through;
+  color: #8e8e8e;
+}
+
+.compare__table .table tbody > tr td button.compare__cart {
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .compare__table .table tbody tr td.product__remove button {

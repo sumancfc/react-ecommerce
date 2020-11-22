@@ -6,16 +6,17 @@ import { deleteFromCompare } from "../actions/compareActions";
 import { getDiscount } from "../helpers/products";
 import Breadcrumb from "../components/common/breadcrumb";
 import Layout from "../components/Layouts";
-import { deleteAllFromWishlist } from "../actions/wishlistActions";
+import { addToCart } from "../actions/cartActions";
 
-const Compare = ({ compareItems, deleteFromCompare }) => {
+const Compare = ({ cartItems, compareItems, addToCart, deleteFromCompare }) => {
+  const { addToast } = useToasts();
   return (
     <Layout>
       <Breadcrumb pageTitle='Compare' />
 
       <div className='compare__page-wrap pt-90 pb-90'>
         <div className='container'>
-          {compareItems && compareItems.length >= 0 ? (
+          {compareItems && compareItems.length >= 1 ? (
             <div className='row'>
               <div className='col-lg-12'>
                 <div className='compare__content-wrap'>
@@ -23,126 +24,138 @@ const Compare = ({ compareItems, deleteFromCompare }) => {
                     <table className='table table-bordered mb-0'>
                       <tbody>
                         <tr>
-                          <td className='first__col'>Product</td>
-                          <td className='product__img-title'>
-                            <Link to='single-product.html' className='image'>
-                              <img
-                                className='img-fluid'
-                                src='assets/images/product/1.jpg'
-                                alt='Compare Product'
-                              />
-                            </Link>
-                            <Link to='#' className='category'>
-                              Table
-                            </Link>
-                            <Link
-                              to='single-product-sale.html'
-                              className='title'
-                            >
-                              Product Name
-                            </Link>
-                          </td>
-                          <td className='product__img-title'>
-                            <Link to='single-product.html' className='image'>
-                              <img
-                                className='img-fluid'
-                                src='assets/images/product/2.jpg'
-                                alt='Compare Product'
-                              />
-                            </Link>
-                            <Link to='#' className='category'>
-                              Table{" "}
-                            </Link>
-                            <Link
-                              to='single-product-group.html'
-                              className='title'
-                            >
-                              {" "}
-                              Product Name
-                            </Link>
-                          </td>
-                          <td className='product__img-title'>
-                            <Link to='single-product.html' className='image'>
-                              <img
-                                className='img-fluid'
-                                src='assets/images/product/3.jpg'
-                                alt='Compare Product'
-                              />
-                            </Link>
-                            <Link to='#' className='category'>
-                              Table
-                            </Link>
-                            <Link to='single-product.html' className='title'>
-                              {" "}
-                              Product Name
-                            </Link>
-                          </td>
+                          <td className='first__col'>Product Name</td>
+
+                          {compareItems.map((compareItem, i) => (
+                            <td className='product__img-title' key={i}>
+                              <Link
+                                to={
+                                  process.env.PUBLIC_URL +
+                                  "/product/" +
+                                  compareItem.id
+                                }
+                                className='image'
+                              >
+                                <img
+                                  className='img-fluid'
+                                  src={
+                                    process.env.PUBLIC_URL +
+                                    compareItem.image[0]
+                                  }
+                                  alt={compareItem.name}
+                                />
+                              </Link>
+                              <Link to='#' className='category'>
+                                {compareItem.category.join(" , ")}
+                              </Link>
+                              <Link
+                                to={
+                                  process.env.PUBLIC_URL +
+                                  "/product/" +
+                                  compareItem.id
+                                }
+                                className='title'
+                              >
+                                {compareItem.name}
+                              </Link>
+                            </td>
+                          ))}
                         </tr>
+
                         <tr>
                           <td className='first__col'>Description</td>
-                          <td className='product__description'>
-                            <p>
-                              dolore nihil quis consequatur quae iure vitae.
-                              Neque consequuntur ex numquam modi necessitatibus
-                              doloribus, delectus eos quas nobis itaque, aliquam
-                              voluptates. Deleniti quae quia, maiores minima
-                              perspiciatis molestiae voluptate?
-                            </p>
-                          </td>
-                          <td className='product__description'>
-                            <p>
-                              dolore nihil quis consequatur quae iure vitae.
-                              Neque consequuntur ex numquam modi necessitatibus
-                              doloribus, delectus eos quas nobis itaque, aliquam
-                              voluptates. Deleniti quae quia, maiores minima
-                              perspiciatis molestiae voluptate?
-                            </p>
-                          </td>
-                          <td className='product__description'>
-                            <p>
-                              dolore nihil quis consequatur quae iure vitae.
-                              Neque consequuntur ex numquam modi necessitatibus
-                              doloribus, delectus eos quas nobis itaque, aliquam
-                              voluptates. Deleniti quae quia, maiores minima
-                              perspiciatis molestiae voluptate?
-                            </p>
-                          </td>
+                          {compareItems.map((compareItem, i) => (
+                            <td className='product__description' key={i}>
+                              <p>{compareItem.shortDetails}</p>
+                            </td>
+                          ))}
                         </tr>
                         <tr>
                           <td className='first__col'>Price</td>
-                          <td className='compare__price'>$295</td>
-                          <td className='compare__price'>$275</td>
-                          <td className='compare__price'>$395</td>
+                          {compareItems.map((compareItem, i) => {
+                            const discountedPrice = getDiscount(
+                              compareItem.price,
+                              compareItem.discount
+                            );
+                            const finalProductPrice = Number(
+                              compareItem.price
+                            ).toFixed(2);
+                            const finalDiscountedPrice = Number(
+                              discountedPrice
+                            ).toFixed(2);
+
+                            return (
+                              <td className='compare__price' key={i}>
+                                {discountedPrice !== null ? (
+                                  <>
+                                    <span className='amount old'>
+                                      ${finalProductPrice}
+                                    </span>
+                                    <span className='amount'>
+                                      ${finalDiscountedPrice}
+                                    </span>
+                                  </>
+                                ) : (
+                                  <span className='amount'>
+                                    ${finalProductPrice}
+                                  </span>
+                                )}
+                              </td>
+                            );
+                          })}
                         </tr>
                         <tr>
                           <td className='first__col'>Color</td>
-                          <td className='compare__color'>Black</td>
-                          <td className='compare__color'>Red</td>
-                          <td className='compare__color'>Blue</td>
+                          {compareItems.map((compareItem, i) => (
+                            <td className='compare__color' key={i}>
+                              <p>{compareItem.variation.color}</p>
+                            </td>
+                          ))}
                         </tr>
                         <tr>
                           <td className='first__col'>Stock</td>
-                          <td className='product__instock'>In Stock</td>
-                          <td className='product__instock'>Stock Out</td>
-                          <td className='product__instock'>In Stock</td>
+                          {compareItems.map((compareItem, i) => (
+                            <td className='product__instock' key={i}>
+                              <p>{compareItem.stock}</p>
+                            </td>
+                          ))}
                         </tr>
                         <tr>
                           <td className='first__col'>Add to cart</td>
-                          <td>
-                            <Link to='cart.html' className='btn-check'>
-                              Add to Cart
-                            </Link>
-                          </td>
-                          <td>
-                            <Link to='cart.html' className='btn-check disabled'>
-                              Add to Cart
-                            </Link>
-                          </td>
-                          <td>
-                            <Link to='cart.html' className='btn-check'>
-                              Add to Cart
-                            </Link>
-                          </td>
+                          {compareItems.map((compareItem, i) => {
+                            const cartItem = cartItems.filter(
+                              (item) => item.id === compareItem.id
+                            )[0];
+                            return compareItem.stock &&
+                              compareItem.stock > 0 ? (
+                              <td key={i}>
+                                <button
+                                  className='compare__cart'
+                                  onClick={() =>
+                                    addToCart(compareItem, addToast)
+                                  }
+                                  disabled={
+                                    cartItem !== undefined &&
+                                    cartItem.quantity > 0
+                                  }
+                                  title={
+                                    compareItem !== undefined
+                                      ? "Added to cart"
+                                      : "Add to cart"
+                                  }
+                                >
+                                  {cartItem !== undefined &&
+                                  cartItem.quantity > 0
+                                    ? "Added to cart"
+                                    : "Add to cart"}
+                                </button>
+                              </td>
+                            ) : (
+                              <button disabled className='compare__cart'>
+                                out od Stock
+                              </button>
+                            );
+                          })}
                         </tr>
                         <tr>
                           <td className='first__col'>Rating</td>
@@ -153,38 +166,20 @@ const Compare = ({ compareItems, deleteFromCompare }) => {
                             <i className='la la-star'></i>
                             <i className='la la-star'></i>
                           </td>
-                          <td className='product__rating'>
-                            <i className='la la-star'></i>
-                            <i className='la la-star'></i>
-                            <i className='la la-star'></i>
-                            <i className='la la-star'></i>
-                            <i className='la la-star'></i>
-                          </td>
-                          <td className='product__rating'>
-                            <i className='la la-star'></i>
-                            <i className='la la-star'></i>
-                            <i className='la la-star'></i>
-                            <i className='la la-star'></i>
-                            <i className='la la-star'></i>
-                          </td>
                         </tr>
                         <tr>
                           <td className='first__col'>Remove</td>
-                          <td className='product__remove'>
-                            <button>
-                              <i className='la la-trash'></i>
-                            </button>
-                          </td>
-                          <td className='product__remove'>
-                            <button>
-                              <i className='la la-trash'></i>
-                            </button>
-                          </td>
-                          <td className='product__remove'>
-                            <button>
-                              <i className='la la-trash'></i>
-                            </button>
-                          </td>
+                          {compareItems.map((compareItem, i) => (
+                            <td className='product__remove' key={i}>
+                              <button
+                                onClick={() =>
+                                  deleteFromCompare(compareItem, addToast)
+                                }
+                              >
+                                <i className='la la-trash'></i>
+                              </button>
+                            </td>
+                          ))}
                         </tr>
                       </tbody>
                     </table>
@@ -219,12 +214,17 @@ const Compare = ({ compareItems, deleteFromCompare }) => {
 
 const mapStateToProps = (state) => {
   return {
+    cartItems: state.cartData,
     compareItems: state.compareData,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
+    addToCart: (item, addToast, quantityCount) => {
+      dispatch(addToCart(item, addToast, quantityCount));
+    },
+
     deleteFromCompare: (item, addToast) => {
       dispatch(deleteFromCompare(item, addToast));
     },

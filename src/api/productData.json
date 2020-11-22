@@ -3,7 +3,6 @@
     "id": 1,
     "name": "White Smart Watch",
     "price": 120,
-    "salePrice": 200,
     "saleCount": 12,
     "image": [
       "/assets/img/product/1.jpg",
@@ -13,7 +12,7 @@
     ],
     "shortDetails": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem,",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "stock": 2,
+    "stock": 4,
     "new": true,
     "sale": true,
     "category": ["watch", "fashions"],
@@ -49,7 +48,6 @@
     "id": 2,
     "name": "Blue Strap Watch",
     "price": 120,
-    "salePrice": 200,
     "discount": 50,
     "saleCount": 20,
     "image": [
@@ -79,7 +77,6 @@
     "id": 3,
     "name": "Golden Strap Watch",
     "price": 120,
-    "salePrice": 200,
     "discount": 50,
     "saleCount": 14,
     "image": [
@@ -116,7 +113,6 @@
     "id": 4,
     "name": "Men Brown Watch",
     "price": 120,
-    "salePrice": 200,
     "discount": 5,
     "saleCount": 12,
     "image": [
@@ -153,7 +149,6 @@
     "id": 5,
     "name": "Men Black Watch",
     "price": 150,
-    "salePrice": 200,
     "discount": 50,
     "saleCount": 12,
     "image": [
@@ -190,7 +185,6 @@
     "id": 6,
     "name": "Brown Strap Watch",
     "price": 120,
-    "salePrice": 200,
     "saleCount": 100,
     "image": [
       "/assets/img/product/6.jpg",
@@ -226,7 +220,6 @@
     "id": 7,
     "name": "Black Leather Watch",
     "price": 200,
-    "salePrice": 200,
     "discount": 50,
     "saleCount": 80,
     "image": [
@@ -263,7 +256,6 @@
     "id": 8,
     "name": "Order Made Watch",
     "price": 300,
-    "salePrice": 200,
     "discount": 50,
     "saleCount": 3,
     "image": [

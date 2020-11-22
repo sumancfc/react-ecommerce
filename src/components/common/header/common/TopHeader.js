@@ -34,7 +34,7 @@ const TopHeader = ({ clsName }) => (
               </div>
             </div>
             <div className='top__content-right'>
-              <Link to='/my-account'>My Account</Link>
+              <Link to='/profile'>My Account</Link>
               <Link to='/wishlist'>Wishlist</Link>
               <Link to='/login-register'>Sign in</Link>
             </div>
