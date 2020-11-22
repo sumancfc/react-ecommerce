@@ -36,7 +36,7 @@ const Profile = () => {
                       <a href='#account-info' data-toggle='tab'>
                         <i className='fa fa-user'></i> Account Details
                       </a>
-                      <a href='login-register.html'>
+                      <a href='/login-register'>
                         <i className='fa fa-sign-out'></i> Logout
                       </a>
                     </div>

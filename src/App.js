@@ -11,6 +11,7 @@ import Compare from "./pages/Compare";
 import Profile from "./pages/Profile";
 import LoginRegister from "./pages/Login-Register";
 import Checkout from "./pages/Checkout";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/profile' exact component={Profile} />
           <Route path='/shop' exact component={Shop} />
           <Route path='/' exact component={Home} />
+          <Route exact component={PageNotFound} />
         </Switch>
       </Router>
     </ToastProvider>
