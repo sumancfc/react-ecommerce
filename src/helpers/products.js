@@ -21,6 +21,14 @@ export const getProducts = (products, category, limit, type) => {
       .slice(0, limit ? limit : finalProducts.length);
   }
 
+  //saleItems
+  if (type && type === "saleItems") {
+    const saleItems = finalProducts.filter(
+      (single) => single.discount && single.discount > 0
+    );
+    return saleItems.slice(0, limit ? limit : finalProducts.length);
+  }
+
   return finalProducts.slice(0, limit ? limit : finalProducts.length);
 };
 
