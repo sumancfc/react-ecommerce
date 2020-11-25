@@ -15,7 +15,7 @@ const LoginRegister = () => {
           <div className='row'>
             <div className='col-lg-7 col-md-12 ml-auto mr-auto'>
               <div className='login__register-wrapper'>
-                <Tab.Container defaultActiveKey='login'>
+                <Tab.Container variant='pills' defaultActiveKey='login'>
                   <Nav className='login__register-tab-list'>
                     <Nav.Item>
                       <Nav.Link eventKey='login'>
@@ -59,7 +59,7 @@ const LoginRegister = () => {
                       </div>
                     </Tab.Pane>
 
-                    <Tab.Content eventKey='register'>
+                    <Tab.Pane eventKey='register'>
                       <div className='login__form-wrapper'>
                         <div className='login__register-form'>
                           <form action='#' method='post'>
@@ -87,7 +87,7 @@ const LoginRegister = () => {
                           </form>
                         </div>
                       </div>
-                    </Tab.Content>
+                    </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
               </div>
