@@ -1948,6 +1948,11 @@ textarea {
   display: block;
   padding: 10px 15px;
   text-transform: uppercase;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
 }
 
 .account__tab-menu a:last-child {
@@ -1956,9 +1961,9 @@ textarea {
 
 .account__tab-menu a:hover,
 .account__tab-menu a.active {
-  background-color: #ff5151;
-  border-color: #ff5151;
-  color: #ffffff;
+  background-color: #ff5151 !important;
+  border-color: #ff5151 !important;
+  color: #ffffff !important;
 }
 
 .account__tab-menu a i.fa {
