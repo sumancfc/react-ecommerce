@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useToasts } from "react-toast-notifications";
-import { connect } from "react-redux";
+import { connect, useSelector } from "react-redux";
 import { deleteFromCompare } from "../actions/compareActions";
 import { getDiscount } from "../helpers/products";
 import Breadcrumb from "../components/common/breadcrumb";
@@ -10,6 +10,7 @@ import { addToCart } from "../actions/cartActions";
 
 const Compare = ({ cartItems, compareItems, addToCart, deleteFromCompare }) => {
   const { addToast } = useToasts();
+
   return (
     <Layout>
       <Breadcrumb pageTitle='Compare' />

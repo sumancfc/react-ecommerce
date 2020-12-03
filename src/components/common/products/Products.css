@@ -242,7 +242,7 @@
   margin: 13px 0 10px;
 }
 
-.product__details-content .product__ratting-review {
+.product__details-content .product__rating-review {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,130 +252,20 @@
   margin: 0 0 38px;
 }
 
-.product__details-content .product__ratting-review .product__ratting {
+.product__details-content .product__rating-review .product__rating {
   margin-right: 20px;
 }
 
-.product__details-content .product__ratting-review .product__ratting i {
+.product__details-content .product__rating-review .product__rating i {
   font-size: 18px;
   color: #ff5151;
   opacity: 0.4;
 }
 
-.product__details-content .product__ratting-review .product__review span {
+.product__details-content .product__rating-review .product__review span {
   font-size: 14px;
   color: #959595;
   letter-spacing: 0.2px;
-}
-
-.product__details-content .pro__details-color-wrap {
-  margin: 0 0 35px;
-}
-
-.product__details-content .pro__details-color-wrap span {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333333;
-  margin: 0 0 14px;
-  display: block;
-}
-
-.product__details-content .pro__details-color-wrap .pro__details-color-content {
-  display: block;
-  overflow: hidden;
-}
-
-.product__details-content
-  .pro__details-color-wrap
-  .pro__details-color-content
-  ul
-  li {
-  border-radius: 100%;
-  cursor: pointer;
-  display: block;
-  float: left;
-  height: 28px;
-  margin-right: 15px;
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  width: 28px;
-}
-
-.product__details-content
-  .pro__details-color-wrap
-  .pro__details-color-content
-  ul
-  li.green {
-  background-color: #75ffba;
-}
-
-.product__details-content
-  .pro__details-color-wrap
-  .pro__details-color-content
-  ul
-  li.yellow {
-  background-color: #ffcd75;
-}
-
-.product__details-content
-  .pro__details-color-wrap
-  .pro__details-color-content
-  ul
-  li.red {
-  background-color: #ff4f4f;
-}
-
-.product__details-content
-  .pro__details-color-wrap
-  .pro__details-color-content
-  ul
-  li.blue {
-  background-color: #5666ff;
-}
-
-.product__details-content .pro__details-size {
-  margin-bottom: 35px;
-}
-
-.product__details-content .pro__details-size span {
-  font-size: 16px;
-  font-weight: bold;
-  color: #333333;
-  margin: 0 0 8px;
-  display: block;
-}
-
-.product__details-content .pro__details-size .pro__details-size-content ul li {
-  display: inline-block;
-  margin-right: 38px;
-}
-
-.product__details-content
-  .pro__details-size
-  .pro__details-size-content
-  ul
-  li:last-child {
-  margin-right: 0px;
-}
-
-.product__details-content
-  .pro__details-size
-  .pro__details-size-content
-  ul
-  li
-  a {
-  font-size: 16px;
-  color: #333333;
-  text-transform: uppercase;
-}
-
-.product__details-content
-  .pro__details-size
-  .pro__details-size-content
-  ul
-  li
-  a:hover {
-  color: #ff5151;
 }
 
 .product__details-content .pro__details-price-wrap {
@@ -409,47 +299,41 @@
 
 .product__details-content .pro__details-quality .cart__plus-minus {
   border: 1px solid #ffb9b9;
-  display: inline-block;
-  height: 41px;
+  display: flex;
+  justify-content: space-between;
   overflow: hidden;
-  padding: 0;
+  align-items: center;
   position: relative;
   width: 120px;
-  border-radius: 100px;
 }
 
 .product__details-content .pro__details-quality .cart__plus-minus .qtybutton {
   color: #333;
   cursor: pointer;
   float: inherit;
-  font-size: 18px;
+  font-size: 28px;
   line-height: 20px;
   margin: 0;
   position: absolute;
   text-align: center;
-  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   width: 24px;
+  background: none;
+  border: none;
 }
 
 .product__details-content
   .pro__details-quality
   .cart__plus-minus
   .qtybutton.dec {
-  height: 60px;
   left: 21px;
-  padding-top: 9px;
-  top: 0;
 }
 
 .product__details-content
   .pro__details-quality
   .cart__plus-minus
   .qtybutton.inc {
-  height: 60px;
-  padding-top: 9px;
   right: 18px;
-  top: 0;
 }
 
 .product__details-content
@@ -484,54 +368,29 @@
 .product__details-content
   .pro__details-compare-wishlist
   .pro__details-compare
-  a {
+  button,
+.product__details-content
+  .pro__details-compare-wishlist
+  .pro__details-wishlist
+  button {
   font-size: 14px;
   color: #333333;
+  background: none;
+  border: none;
 }
 
 .product__details-content
   .pro__details-compare-wishlist
   .pro__details-compare
-  a:hover {
+  button:hover,
+.product__details-content
+  .pro__details-compare-wishlist
+  .pro__details-wishlist
+  bytton:hover {
   color: #ff5151;
 }
 
-.product__details-content
-  .pro__details-compare-wishlist
-  .pro__details-compare
-  a
-  i {
-  font-size: 16px;
-  color: #333333;
-  margin-left: 5px;
-}
-
-.product__details-content
-  .pro__details-compare-wishlist
-  .pro__details-wishlist
-  a {
-  font-size: 14px;
-  color: #333333;
-}
-
-.product__details-content
-  .pro__details-compare-wishlist
-  .pro__details-wishlist
-  a:hover {
-  color: #ff5151;
-}
-
-.product__details-content
-  .pro__details-compare-wishlist
-  .pro__details-wishlist
-  a
-  i {
-  font-size: 16px;
-  color: #333333;
-  margin-left: 5px;
-}
-
-.product__details-content .pro__details-buy-now a {
+.product__details-content .pro__details-buy-now button {
   display: inline-block;
   font-size: 14px;
   line-height: 1;
@@ -540,15 +399,16 @@
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
   padding: 12px 30px 12px;
-  border-radius: 50px;
   z-index: 1;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
+  background: none;
 }
 
-.product__details-content .pro__details-buy-now a:hover {
+.product__details-content .pro__details-buy-now button:hover {
   color: #ffffff;
+  background: #ff5151;
 }
 
 .nav__style {
@@ -1281,16 +1141,8 @@
     max-width: 720px;
   }
 
-  .product__details-content .product__ratting-review {
+  .product__details-content .product__rating-review {
     margin: 0 0 18px;
-  }
-
-  .product__details-content .pro__details-color-wrap {
-    margin: 0 0 20px;
-  }
-
-  .product__details-content .pro__details-size {
-    margin: 0 0 20px;
   }
 
   .product__details-content .pro__details-price-wrap {
@@ -1345,15 +1197,7 @@
     margin: 7px 0 10px;
   }
 
-  .product__details-content .product__ratting-review {
-    margin: 0 0 15px;
-  }
-
-  .product__details-content .pro__details-color-wrap {
-    margin: 0 0 15px;
-  }
-
-  .product__details-content .pro__details-size {
+  .product__details-content .product__rating-review {
     margin: 0 0 15px;
   }
 
