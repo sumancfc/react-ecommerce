@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment, useRef } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import { Modal } from "react-bootstrap";
 import { connect } from "react-redux";
 import Swiper from "react-id-swiper";
@@ -6,9 +6,6 @@ import "swiper/css/swiper.css";
 
 const ProductModal = (props) => {
   const { product } = props;
-
-  //   const gallerySwiperRef = useRef(null);
-  //   const thumbnailSwiperRef = useRef(null);
 
   const [gallerySwiper, getGallerySwiper] = useState(null);
   const [thumbnailSwiper, getThumbnailSwiper] = useState(null);

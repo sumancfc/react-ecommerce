@@ -12,12 +12,14 @@ import Profile from "./pages/Profile";
 import LoginRegister from "./pages/Login-Register";
 import Checkout from "./pages/Checkout";
 import PageNotFound from "./pages/PageNotFound";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
   return (
     <ToastProvider placement='top-left'>
       <Router>
         <Switch>
+          <Route path='/product/:id' exact component={ProductDetails} />
           <Route path='/wishlist' exact component={Wishlist} />
           <Route path='/cart' exact component={Cart} />
           <Route path='/checkout' exact component={Checkout} />

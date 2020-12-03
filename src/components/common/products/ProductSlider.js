@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Products.css";
 
-const Products = () => {
+const ProductSlider = () => {
   const settings = {
     dots: false,
     infinite: false,
@@ -149,4 +149,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default ProductSlider;

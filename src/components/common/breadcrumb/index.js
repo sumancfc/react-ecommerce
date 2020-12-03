@@ -8,7 +8,9 @@ const Breadcrumb = ({ pageTitle }) => {
 
     <div
       className='breadcrumb__area bg-img'
-      style={{ backgroundImage: `url(assets/images/bg/breadcrumb.jpg)` }}
+      style={{
+        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/bg/breadcrumb.jpg)`,
+      }}
     >
       <div className='container'>
         <div className='breadcrumb__content text-center'>
