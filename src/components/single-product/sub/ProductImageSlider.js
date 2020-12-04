@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+
 import Swiper from "react-id-swiper";
 
 const ProductImageSlider = ({ product }) => {
@@ -42,14 +42,10 @@ const ProductImageSlider = ({ product }) => {
       prevEl: ".swiper-button-prev",
     },
     renderPrevButton: () => (
-      <button className='swiper-button-prev ht-swiper-button-nav'>
-        <i className='la la-angle-left' />
-      </button>
+      <button className='swiper-button-prev ht-swiper-button-nav'></button>
     ),
     renderNextButton: () => (
-      <button className='swiper-button-next ht-swiper-button-nav'>
-        <i className='la la-angle-right' />
-      </button>
+      <button className='swiper-button-next ht-swiper-button-nav'></button>
     ),
   };
 

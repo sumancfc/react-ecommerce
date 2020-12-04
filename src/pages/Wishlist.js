@@ -101,7 +101,7 @@ const Wishlist = ({
                                   </Link>
                                 ) : wishlistItem.stock &&
                                   wishlistItem.stock > 0 ? (
-                                  <Link>Add To Cart</Link>
+                                  <Link to='#'>Add To Cart</Link>
                                 ) : (
                                   <button disabled className='active'>
                                     Out of stock
@@ -110,7 +110,7 @@ const Wishlist = ({
                               </td>
                               <td className='product__remove'>
                                 <Link
-                                  tp='#'
+                                  to='#'
                                   onClick={() =>
                                     deleteFromWishlist(wishlistItem, addToast)
                                   }

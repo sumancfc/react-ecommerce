@@ -5,6 +5,7 @@ import { addToCart } from "../../../actions/cartActions";
 import { addToWishlist } from "../../../actions/wishlistActions";
 import { addToCompare } from "../../../actions/compareActions";
 import { getProductCartQuantity } from "../../../helpers/products";
+import ProductRating from "../../common/rating";
 
 const ProductInfo = ({
   product,
@@ -44,18 +45,21 @@ const ProductInfo = ({
     <div className='col-lg-6 col-md-6'>
       <div className='product__details-content product__details-content-modify'>
         <h2>{product.name}</h2>
-        <div className='product__rating-review'>
-          <div className='product__rating'>
-            <i className='la la-star'></i>
-            <i className='la la-star'></i>
-            <i className='la la-star'></i>
-            <i className='la la-star'></i>
-            <i className='la la-star-half-o'></i>
+
+        {product.rating && product.rating > 0 ? (
+          <div className='product__rating-review'>
+            <div className='product__rating'>
+              <ProductRating ratingValue={product.rating} />
+            </div>
+            <div className='product__rating'>
+              <span>40+ Reviews</span>
+            </div>
           </div>
+        ) : (
           <div className='product__rating'>
-            <span>40+ Reviews</span>
+            <span>No Reviews</span>
           </div>
-        </div>
+        )}
 
         {product.variation ? (
           <div className='pro-details-size-color'>

@@ -115,6 +115,15 @@ const ProductItem = ({
         onHide={() => setSModal(false)}
         show={sModal}
         product={product}
+        discountedPrice={discountedPrice}
+        finalProductPrice={finalProductPrice}
+        finalDiscountedPrice={finalDiscountedPrice}
+        addToCart={addToCart}
+        wishlistItem={wishlistItem}
+        compareItem={compareItem}
+        addToCompare={addToCompare}
+        addToWishlist={addToWishlist}
+        addToast={addToast}
       />
     </Fragment>
   );
