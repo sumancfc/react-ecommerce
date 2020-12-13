@@ -137,20 +137,20 @@ const Cart = ({
                                         quantityCount
                                       )
                                     }
-                                    // disabled={
-                                    //   cartItem !== undefined &&
-                                    //   cartItem.quantity &&
-                                    //   cartItem.quantity >=
-                                    //     cartItemStock(
-                                    //       cartItem,
-                                    //       cartItem.selectedProductColor,
-                                    //       cartItem.selectedProductSize
-                                    //     )
-                                    // }
                                     disabled={
                                       cartItem !== undefined &&
-                                      cartItem.quantity
+                                      cartItem.quantity &&
+                                      cartItem.quantity >=
+                                        cartItemStock(
+                                          cartItem,
+                                          cartItem.selectedProductColor,
+                                          cartItem.selectedProductSize
+                                        )
                                     }
+                                    // disabled={
+                                    //   cartItem !== undefined &&
+                                    //   cartItem.quantity
+                                    // }
                                   >
                                     +
                                   </button>

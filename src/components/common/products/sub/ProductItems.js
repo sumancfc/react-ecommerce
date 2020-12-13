@@ -15,6 +15,7 @@ const ProductItems = ({
   wishlistItems,
   compareItems,
 }) => {
+  console.log(wishlistItems);
   return (
     <>
       {products.map((product) => {

@@ -13,6 +13,7 @@ const ProductItem = ({
   wishlistItem,
   compareItem,
 }) => {
+  // console.log(wishlistItem);
   const { addToast } = useToasts();
   const [sModal, setSModal] = useState(false);
 
