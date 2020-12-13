@@ -193,12 +193,15 @@ const Compare = ({ cartItems, compareItems, addToCart, deleteFromCompare }) => {
               <div className='col-lg-12'>
                 <div className='empty__area text-center'>
                   <div className='empty__area-icon mb-30'>
-                    <i className='la la-heart'></i>
+                    <i className='la la-retweet'></i>
                   </div>
                   <div className='empty__area-text'>
                     <h3> No items found in compare </h3>
-                    <div className='default-btn btn-hover'>
-                      <Link to={process.env.PUBLIC_URL + "/shop"}>
+                    <div className='default-btn btn-hover mt-30'>
+                      <Link
+                        to={process.env.PUBLIC_URL + "/shop"}
+                        className='btn-style-outline btn-size-md '
+                      >
                         Add Items
                       </Link>
                     </div>
