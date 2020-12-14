@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useToasts } from "react-toast-notifications";
-import { connect, useSelector } from "react-redux";
+import { connect } from "react-redux";
 import { deleteFromCompare } from "../actions/compareActions";
 import { getDiscount } from "../helpers/products";
 import Breadcrumb from "../components/common/breadcrumb";
 import Layout from "../components/Layouts";
 import { addToCart } from "../actions/cartActions";
+import ProductRating from "../components/common/rating";
 
 const Compare = ({ cartItems, compareItems, addToCart, deleteFromCompare }) => {
   const { addToast } = useToasts();
@@ -105,14 +106,7 @@ const Compare = ({ cartItems, compareItems, addToCart, deleteFromCompare }) => {
                             );
                           })}
                         </tr>
-                        <tr>
-                          <td className='first__col'>Color</td>
-                          {compareItems.map((compareItem, i) => (
-                            <td className='compare__color' key={i}>
-                              <p>{compareItem.variation.color}</p>
-                            </td>
-                          ))}
-                        </tr>
+
                         <tr>
                           <td className='first__col'>Stock</td>
                           {compareItems.map((compareItem, i) => (
@@ -127,11 +121,17 @@ const Compare = ({ cartItems, compareItems, addToCart, deleteFromCompare }) => {
                             const cartItem = cartItems.filter(
                               (item) => item.id === compareItem.id
                             )[0];
+
                             return compareItem.stock &&
                               compareItem.stock > 0 ? (
                               <td key={i}>
                                 <button
-                                  className='compare__cart'
+                                  className={
+                                    cartItem !== undefined &&
+                                    cartItem.quantity > 0
+                                      ? "active"
+                                      : ""
+                                  }
                                   onClick={() =>
                                     addToCart(compareItem, addToast)
                                   }
@@ -140,7 +140,7 @@ const Compare = ({ cartItems, compareItems, addToCart, deleteFromCompare }) => {
                                     cartItem.quantity > 0
                                   }
                                   title={
-                                    compareItem !== undefined
+                                    cartItem !== undefined
                                       ? "Added to cart"
                                       : "Add to cart"
                                   }
@@ -160,13 +160,26 @@ const Compare = ({ cartItems, compareItems, addToCart, deleteFromCompare }) => {
                         </tr>
                         <tr>
                           <td className='first__col'>Rating</td>
-                          <td className='product__rating'>
-                            <i className='la la-star'></i>
-                            <i className='la la-star'></i>
-                            <i className='la la-star'></i>
-                            <i className='la la-star'></i>
-                            <i className='la la-star'></i>
-                          </td>
+                          {compareItems.map((compareItem, i) => (
+                            <td>
+                              {compareItem.rating && compareItem.rating > 0 ? (
+                                <div>
+                                  <div className='product__rating'>
+                                    <ProductRating
+                                      ratingValue={compareItem.rating}
+                                    />
+                                  </div>
+                                  <div className='product__rating'>
+                                    <span>(40+)</span>
+                                  </div>
+                                </div>
+                              ) : (
+                                <div className='product__rating'>
+                                  <span>No Reviews</span>
+                                </div>
+                              )}
+                            </td>
+                          ))}
                         </tr>
                         <tr>
                           <td className='first__col'>Remove</td>
